@@ -27,18 +27,21 @@ function Footer() {
                 <strong>E-mail :</strong> xx@gmail.com
               </p>
             </div>
-            <div className="footer-reseaux-sociaux">
+          </div>
+        </div>
+      </div>
+      <div className="footer-reseaux-sociaux">
               <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
               ></link>
-
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
             </div>
-          </div>
-        </div>
+      <div className="footer-copyright">
+      <p>Copyright © 2025 LA BEAUTE CHEZ MOI</p>
       </div>
+      
     </footer>
   );
 }
