@@ -3,7 +3,6 @@
 
 footer{
   background-color: #eeecf0;
-  /* border: 2px solid rgb(101, 9, 213); */
 }
 
 .footer-container {
@@ -53,6 +52,11 @@ td {
   display: grid;
   grid-template-columns: auto auto;
   /* border: 2px solid rgb(101, 9, 213); */
+}
+
+.footer-infos, a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Reseaux sociaux */
