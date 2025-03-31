@@ -20,30 +20,37 @@ footer img {
 
 /* Informations */
 
-
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid rgb(23, 213, 9);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  border: 2px solid rgb(23, 213, 9);
 }
 
-.footer-right, td {
-    border-bottom-style:inset;
+.footer-right,
+td {
+  border-bottom-style: inset;
 }
 
-
+.footer-right-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 0, 0);
+  height: 100%;
+  padding: 10px;
+}
 
 .footer-infos {
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 2px solid rgb(101, 9, 213);
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 2px solid rgb(101, 9, 213);
 }
 
 /* Reseaux sociaux */
-.footer-reseaux-sociaux{
-    text-align: center;
-    border: 2px solid red;
+.footer-reseaux-sociaux {
+  text-align: center;
+  border: 2px solid red;
 }
 
 .fa {
