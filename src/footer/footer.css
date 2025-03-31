@@ -1,9 +1,51 @@
+/* */
+.footer-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: auto;
+  height: auto;
+}
+
+/* Logo */
+
+.footer-logo {
+  text-align: center;
+  border: 2px solid rgb(101, 9, 213);
+}
+
+footer img {
+  width: 50%;
+  height: auto;
+}
+
+/* Informations */
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid rgb(23, 213, 9);
+}
+
+.footer-right, td {
+    border-bottom-style:inset;
+}
 
 
 
-
+.footer-infos {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px solid rgb(101, 9, 213);
+}
 
 /* Reseaux sociaux */
+.footer-reseaux-sociaux{
+    text-align: center;
+    border: 2px solid red;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
