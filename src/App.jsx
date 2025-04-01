@@ -1,18 +1,23 @@
 // import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/about";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <section className="accueil-presentation">
-      <h1>La Beauté Chez Moi</h1>
-      <button>Prendre Rendez-vous</button>
-    </section>,
-
-    // <section className="accueil-prestations">
-    <h2>HEllo</h2>
-    // </section>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About/>}/>
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
