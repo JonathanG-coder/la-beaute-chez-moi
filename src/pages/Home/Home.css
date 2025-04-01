@@ -1,0 +1,57 @@
+/* Presentation */
+.home-presentation {
+  background-image: url(../../assets/Presentation-accueil.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-presentation button {
+  background-color: #fd9c9c;
+  border-style: none;
+  height: 5vh;
+  margin-top: 50px;
+}
+/* Prestations */
+.home-prestations {
+  text-align: center;
+}
+
+.home-prestations > img {
+  width: 30%;
+  height: auto;
+}
+
+.home-prestations > h2 {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 2px; */
+  /* margin-top: 30px; */
+  width: 80%;
+  margin: auto;
+}
+
+.grid-item {
+  width: 70%;
+  height: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+.grid-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* test */
