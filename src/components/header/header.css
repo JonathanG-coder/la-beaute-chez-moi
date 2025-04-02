@@ -7,11 +7,11 @@ header {
 
 /* Logo */
 header img {
-  width: 10%;
+  width: 15%;
   height: auto;
 }
 
-/* Menu */
+/* Styles du menu grand ecran */
 .desktop-menu {
   display: flex;
 }
@@ -33,4 +33,62 @@ header img {
 
 .desktop-menu li {
   display: inline-block;
+}
+
+
+
+/* Styles du menu burger */
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 40vh;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 15px;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
 }
