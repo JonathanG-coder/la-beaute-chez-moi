@@ -1,8 +1,6 @@
 import './home.css';
 import logo from "../../assets/Logo-blanc.png";
-import regard from "../../assets/Beaute-du-regard.jpg";
-import manucure from "../../assets/manucures.jpg";
-import massage from "../../assets/massages.jpg"
+
 
 
 

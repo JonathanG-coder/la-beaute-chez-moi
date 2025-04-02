@@ -17,6 +17,7 @@
   height: 5vh;
   margin-top: 50px;
 }
+
 /* Prestations */
 .home-prestations {
   text-align: center;
@@ -32,6 +33,20 @@
   margin-bottom: 50px;
 }
 
+/* 
+
+.grid-item span {
+    position: absolute;
+    transition: transform 1.5s ease;
+  }
+
+  .grid-item:hover {
+    background-color: #E1D9CF;
+    background-image: none;
+    
+  }
+  */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -43,6 +58,7 @@
   width: 70%;
   height: 350px;
   text-align: center;
+  font-size: 290%;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -51,33 +67,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.8s ease-in-out, transform 0.9s ease-in-out;
   position: relative;
+  transition: transform 0.9s ease-out;
 }
 
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e1d9cf;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1;
+}
 
 .grid-item span {
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
-  }
+  position: absolute;
+  z-index: 1;
+  transition: transform 1.5s ease;
+}
 
-  .grid-item:hover {
-    background-color: beige;
-    background-blend-mode: multiply;
-    background-image: none;
-  }
-  
-  .grid-item:hover span {
-    transform: scale(1.2);
-  }
+.grid-item:hover::before {
+  opacity: 1;
+}
 
+.grid-item:hover span {
+  transform: scale(1.5);
+}
 
-  .item3 {
-    background-image: url('../../assets/massages.jpg');
-    object-fit: cover;
-  }
-  
+.item1 {
+  background-image: linear-gradient(#ffffff80, #ffffff80),
+    url("../../assets/Beaute-du-regard.jpg");
+  object-fit: cover;
+}
 
+.item2 {
+  background-image: linear-gradient(#ffffff80, #ffffff80),
+    url("../../assets/manucures.jpg");
+  object-fit: cover;
+}
+
+.item3 {
+  background-image: linear-gradient(#ffffff80, #ffffff80),
+    url("../../assets/massages.jpg");
+  object-fit: cover;
+}
 
 /* Avis client */
 
