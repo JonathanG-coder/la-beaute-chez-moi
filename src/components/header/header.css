@@ -1,8 +1,9 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
   background-color: #ffffff;
+  height: 160px;
 }
 
 /* Logo */
@@ -10,6 +11,8 @@ header img {
   width: 15%;
   height: auto;
 }
+
+
 
 /* Styles du menu grand ecran */
 .desktop-menu {
@@ -85,6 +88,11 @@ header img {
 }
 
 @media (max-width: 768px) {
+  header img {
+    width: 35%;
+    height: auto;
+  }
+
   .desktop-menu {
     display: none;
   }
