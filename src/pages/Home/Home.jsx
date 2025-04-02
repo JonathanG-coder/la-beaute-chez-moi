@@ -1,10 +1,7 @@
-import './home.css';
+import "./home.css";
 import logo from "../../assets/Logo-blanc.png";
 
-
-
-
-function Home() {
+function home() {
   return (
     <div>
       {/* presentation */}
@@ -17,30 +14,21 @@ function Home() {
         <img src={logo} alt="logo du site" />
         <h2>Prestations</h2>
         <div className="grid-container">
-          <div className="grid-item item1"><span>Beauté du regard</span></div>
-          <div className="grid-item item2"><span>Onglerie</span></div>
-          <div className="grid-item item3"><span>Massages</span></div>
+          <div className="grid-item item1">
+            <span>Beauté du regard</span>
+          </div>
+          <div className="grid-item item2">
+            <span>Onglerie</span>
+          </div>
+          <div className="grid-item item3">
+            <span>Massages</span>
+          </div>
         </div>
       </section>
-      <section className='avis-client'>
-
-      </section>
-
-      {/* Teeeeeest */}
-
-
-    
-
-
-
-
-
-
-
-
+      <section className="avis-client"></section>
 
     </div>
   );
 }
 
-export default Home;
+export default home;
