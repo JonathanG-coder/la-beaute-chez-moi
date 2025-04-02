@@ -11,10 +11,15 @@
   text-align: center;
 }
 
+.home-presentation h1 {
+  font-size: 4vw;
+}
+
 .home-presentation button {
   background-color: #fd9c9c;
   border-style: none;
-  height: 5vh;
+  /* height: 5vh; */
+  font-size: 2vw;
   margin-top: 50px;
 }
 
@@ -31,21 +36,8 @@
 .home-prestations > h2 {
   margin-top: -50px;
   margin-bottom: 50px;
+  font-size: 2vw;
 }
-
-/* 
-
-.grid-item span {
-    position: absolute;
-    transition: transform 1.5s ease;
-  }
-
-  .grid-item:hover {
-    background-color: #E1D9CF;
-    background-image: none;
-    
-  }
-  */
 
 .grid-container {
   display: grid;
