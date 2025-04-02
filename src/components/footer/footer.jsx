@@ -4,44 +4,69 @@ import logo from "../../assets/Logo-blanc.png";
 function Footer() {
   return (
     <footer>
-      <div className="footer-container">
-        <div className="footer-logo">
+      <div className="container">
+        {/* LOGO */}
+        <div className="box box1">
           <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
         </div>
-        <div className="footer-right">
-          <td>
-            <strong>Informations : </strong>
-          </td>
-          <div className="footer-right-infos">
-            <div className="footer-infos">
+
+        {/* INFORMATIONS */}
+        <div className="box box2">
+          <h3>
+            <strong>Informations :</strong>
+          </h3>
+          <div className="box2-info">
+            <div className="box2-info boxA">
               <p>
-                <strong>Adresse :</strong><a href="https://www.google.com/maps/place/64250+Espelette/@43.3226866,-1.5344936,12z/data=!4m15!1m8!3m7!1s0xd513ca3d30bb459:0x158cd74bfcaa3df5!2s64250+Espelette!3b1!8m2!3d43.3411775!4d-1.4493722!16zL20vMDhkbG1x!3m5!1s0xd513ca3d30bb459:0x158cd74bfcaa3df5!8m2!3d43.3411775!4d-1.4493722!16zL20vMDhkbG1x?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">Espelette </a>
+                <strong>Adresse :</strong>
+                <a
+                  href="https://www.google.com/maps/place/64250+Espelette/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                 <p>Espelette</p>
+                </a>
+              </p>
+            </div>
+            <div className="box2-info boxB">
+              <p>
+                <strong>Téléphone :</strong>
+              </p>
+              <p>00 11 22 33 44 </p>
+            </div>
+            <div className="box2-info boxC">
+              <p>
+                <strong>Horaires :</strong>
+              </p>
+              <p>Selon RDV</p>
+            </div>
+            <div className="box2-info boxD">
+              <p>
+                <strong>E-mail :</strong>
               </p>
               <p>
-                <strong>Telephone :</strong> 00 11 ..
-              </p>
-              <p>
-                <strong>Horaires :</strong> Selon RDV
-              </p>
-              <p>
-                <strong>E-mail :</strong> xx@gmail.com
+                {" "}
+                <a href="mailto:xx@gmail.com">Jean-beaudruche@gmail.com</a>
               </p>
             </div>
           </div>
         </div>
+
+        {/* RÉSEAUX SOCIAUX */}
+        <div className="box box3">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          ></link>
+          <a href="#" className="fa fa-facebook"></a>
+          <a href="#" className="fa fa-twitter"></a>
+        </div>
+
+        {/* COPYRIGHT */}
+        <div className="box box4">
+          <p>Copyright © 2025 LA BEAUTE CHEZ MOI</p>
+        </div>
       </div>
-      <div className="footer-reseaux-sociaux">
-              <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-              ></link>
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-            </div>
-      <div className="footer-copyright">
-      <p>Copyright © 2025 LA BEAUTE CHEZ MOI</p>
-      </div>
-      
     </footer>
   );
 }
