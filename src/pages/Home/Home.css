@@ -3,7 +3,7 @@
   background-image: url(../../assets/Presentation-accueil.jpg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,11 +18,13 @@
 .home-presentation button {
   background-color: #fd9c9c;
   border-style: none;
-  /* height: 5vh; */
-  font-size: 2vw;
+  height: 5vh;
   margin-top: 50px;
+  border-radius: 100px;
+  letter-spacing: 0.16em;
+  font-size: 1.1rem;
+  font-weight: 700 !important;
 }
-
 
 /* Biographie */
 
@@ -49,11 +51,10 @@
   margin-top: 40px;
 }
 
-
 .bio-img img {
   width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .bio-titre {
@@ -68,20 +69,19 @@
   width: 90%;
   font-size: 15px;
   /* border: 2px solid red; */
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   text-align: start;
   text-align: justify;
 }
 
-.bio-texte p{
+.bio-texte p {
   margin-bottom: 5px;
 }
-
-
 
 /* Prestations */
 .home-prestations {
   text-align: center;
+  margin-top: -20px;
 }
 
 .home-prestations > img {
@@ -171,13 +171,41 @@
   margin-bottom: 20px;
 }
 
-
-
 /* ----------- RESPONSIVE DESIGN ----------- */
+/* ------ prestation ------ */
 @media screen and (max-width: 768px) {
-  .grid-container{
+  .grid-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+/* ------ bio ------ */
+  .bio {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bio-titre"
+      "bio-img"
+      "bio-texte";
+  }
+
+  .bio-titre {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .bio-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .bio-texte {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
+
+
+
+  
