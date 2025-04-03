@@ -12,7 +12,7 @@
 }
 
 .home-presentation h1 {
-  font-size: 4vw;
+  font-size: 2.5rem;
 }
 
 .home-presentation button {
@@ -172,14 +172,28 @@
 }
 
 /* ----------- RESPONSIVE DESIGN ----------- */
-/* ------ prestation ------ */
+
 @media screen and (max-width: 768px) {
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  /* ------ presentation ------ */
+
+  .home-presentation {
+    background-position: left top;
   }
-/* ------ bio ------ */
+  .home-presentation h1 {
+    font-size: 2rem;
+  }
+  .home-presentation button {
+    /* background-color: #fd9c9c; */
+    /* border-style: none; */
+    /* height: 5vh;
+    margin-top: 50px;
+    border-radius: 100px;
+    letter-spacing: 0.16em; */
+    font-size: 0.8rem;
+    /* font-weight: 700 !important; */
+  }
+
+  /* ------ bio ------ */
   .bio {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -204,8 +218,11 @@
     margin: auto;
     margin-bottom: 20px;
   }
+
+  /* ------ prestation ------ */
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-
-
-
-  
