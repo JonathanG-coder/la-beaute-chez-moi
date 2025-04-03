@@ -15,7 +15,6 @@ function Header() {
       <nav className="desktop-menu">
         <ul>
           <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/about">À Propos</Link></li>
           <li><Link to="/prestations">Prestations</Link></li>
           <li><Link to="/prendre-rendez-vous">Prendre Rendez-vous</Link></li>
           <li><Link to="/contact">Contact</Link></li>
@@ -29,7 +28,6 @@ function Header() {
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li><Link to="/" onClick={() => setIsOpen(false)}>Accueil</Link></li>
-          <li><Link to="/about" onClick={() => setIsOpen(false)}>À Propos</Link></li>
           <li><Link to="/prestations" onClick={() => setIsOpen(false)}>Prestations</Link></li>
           <li><Link to="/prendre-rendez-vous" onClick={() => setIsOpen(false)}>Prendre Rendez-vous</Link></li>
           <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
