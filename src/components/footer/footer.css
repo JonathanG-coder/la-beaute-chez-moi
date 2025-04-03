@@ -36,22 +36,24 @@ footer {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  
 }
 
 /* ----------- BOXES DES INFORMATIONS ----------- */
 .box2-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   /* gap: 0px; */
   width: 100%;
 }
 
 .box2 h3 {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
-.boxA, .boxB, .boxC, .boxD {
+.boxA,
+.boxB,
+.boxC,
+.boxD {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,8 +104,17 @@ footer {
     text-align: center;
   }
 
+  .box1 {
+    margin-top: -10%;
+  }
+
+
+  .box2 {
+    margin-top: -20%;
+  }
+
   .box2-info {
-    grid-template-columns: 1fr 1fr; /* Une seule colonne sur mobile */
+    grid-template-columns: 1fr 1fr;
   }
 
   .box1 {
@@ -123,9 +134,3 @@ footer {
     justify-content: center;
   }
 }
-
-
-
-
-
-
