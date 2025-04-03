@@ -50,7 +50,7 @@
   width: 70%;
   height: 350px;
   text-align: center;
-  font-size: 290%;
+  font-size: 230%;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -115,4 +115,15 @@
   background-color: #fd9c9c;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media screen and (max-width: 768px) {
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
