@@ -103,7 +103,7 @@ footer {
   }
 
   .box2-info {
-    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    grid-template-columns: 1fr 1fr; /* Une seule colonne sur mobile */
   }
 
   .box1 {
