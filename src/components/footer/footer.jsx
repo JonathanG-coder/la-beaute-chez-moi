@@ -17,35 +17,36 @@ function Footer() {
             <a href="/" aria-current="page">
               Contacter Gabriela
             </a>
+            <div className="box3">
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              />
+              <a href="#" className="fa fa-instagram"></a>
+            </div>
           </div>
           {/* LES SOINS */}
           <div className="box2Lien">
-            <h3>Les soins</h3>
-            <a href="/" aria-current="page">
-              Massages
-            </a>
-            <a href="/" aria-current="page">
-              Onglerie
-            </a>
-            <a href="/" aria-current="page">
-              Beauté du regard
-            </a>
+            <h3>LES SOINS</h3>
+            <div className="LesSoinsInfos">
+              <div className="LesSoinsInfosG">
+                <a href="/" aria-current="page">
+                  Massages
+                </a>
+                <a href="/" aria-current="page">
+                  Onglerie
+                </a>
+                <a href="/" aria-current="page">
+                  Beauté du regard
+                </a>
+              </div>
+
+              {/* COPYRIGHT */}
+              <div className="box4">
+                <p>-Copyright © 2025 LA BEAUTE CHEZ MOI-</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* RÉSEAUX SOCIAUX */}
-        <div className="box3">
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          />
-          <a href="#" className="fa fa-facebook"></a>
-          <a href="#" className="fa fa-twitter"></a>
-        </div>
-
-        {/* COPYRIGHT */}
-        <div className="box4">
-          <p>Copyright © 2025 LA BEAUTE CHEZ MOI</p>
         </div>
       </div>
     </footer>
