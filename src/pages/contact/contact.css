@@ -1,0 +1,75 @@
+/* ----------- INFORMATIONS ----------- */
+.box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:left;
+    width: 100%;
+    border: 2px solid red;
+  }
+  
+  /* ----------- BOXES DES INFORMATIONS ----------- */
+  .box2-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 0px; */
+    width: 100%;
+  }
+  
+  /* .box2 h3 {
+    
+  } */
+  
+  .boxA,
+  .boxB,
+  .boxC,
+  .boxD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    text-align: center;
+  }
+  
+  
+  .box2 a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .box2 p {
+    margin: 5px 0;
+  }
+  
+  
+  
+  .box2-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #fd9c9c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .box2-button:hover {
+    background-color: #e67878;
+  }
+
+  .box2 {
+    align-items: center;
+  }
+
+  .box2 p,
+  .box2 a {
+    text-align: center;
+  }
+  .box2-info {
+    grid-template-columns: 1fr 1fr;
+  }

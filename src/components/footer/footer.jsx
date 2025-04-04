@@ -6,64 +6,45 @@ function Footer() {
     <footer>
       <div className="container">
         {/* LOGO */}
-        <div className="box box1">
+        <div className="box1">
           <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
         </div>
 
         {/* INFORMATIONS */}
-        <div className="box box2">
-          <h3>
-            <strong>Informations :</strong>
-          </h3>
-          <div className="box2-info">
-            <div className="box2-info boxA">
-              <p>
-                <strong>Adresse :</strong>
-                <a
-                  href="https://www.google.com/maps/place/64250+Espelette/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                 <p>Espelette</p>
-                </a>
-              </p>
-            </div>
-            <div className="box2-info boxB">
-              <p>
-                <strong>Téléphone :</strong>
-              </p>
-              <p>00 11 22 33 44 </p>
-            </div>
-            <div className="box2-info boxC">
-              <p>
-                <strong>Horaires :</strong>
-              </p>
-              <p>Selon RDV</p>
-            </div>
-            <div className="box2-info boxD">
-              <p>
-                <strong>E-mail :</strong>
-              </p>
-              <p>
-                {" "}
-                <a href="mailto:xx@gmail.com">Jean-beaudruche@gmail.com</a>
-              </p>
-            </div>
+        <div className="box2">
+          <div className="box2Info">
+            <h3>INFORMATIONS</h3>
+            <a href="/" aria-current="page">
+              Contacter Gabriela
+            </a>
+          </div>
+          {/* LES SOINS */}
+          <div className="box2Lien">
+            <h3>Les soins</h3>
+            <a href="/" aria-current="page">
+              Massages
+            </a>
+            <a href="/" aria-current="page">
+              Onglerie
+            </a>
+            <a href="/" aria-current="page">
+              Beauté du regard
+            </a>
           </div>
         </div>
 
         {/* RÉSEAUX SOCIAUX */}
-        <div className="box box3">
+        <div className="box3">
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          ></link>
+          />
           <a href="#" className="fa fa-facebook"></a>
           <a href="#" className="fa fa-twitter"></a>
         </div>
 
         {/* COPYRIGHT */}
-        <div className="box box4">
+        <div className="box4">
           <p>Copyright © 2025 LA BEAUTE CHEZ MOI</p>
         </div>
       </div>
