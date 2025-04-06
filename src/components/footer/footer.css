@@ -1,17 +1,16 @@
 .footer {
   background-color: #f8f8f8;
   color: #333;
-  padding: 40px 0;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-areas: "box1 box2 "; */
-  width: 90%;
+
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   align-items: center;
   justify-content: center;
 }
