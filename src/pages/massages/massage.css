@@ -1,0 +1,18 @@
+.cont-header-titre {
+    grid-area: cont-header-titre;
+    display: flex;
+    align-items: center; /* centre verticalement */
+    justify-content:center; /* aligne à gauche */
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 100%;
+    text-align: center;
+  }
+
+  
+  .cont-header-titre h1 {
+    margin: 0;
+    line-height: 1.2;
+  }
+  

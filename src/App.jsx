@@ -6,6 +6,7 @@ import Footer from "./components/footer/footer";
 import Home from "./pages/home/home";
 import Manucure from "./pages/manucure/manucure";
 import Regard from "./pages/regard/regard";
+import Massage from "./pages/massages/massage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/manucure" element={<Manucure />} />
         <Route path="/regard" element={<Regard />} />
+        <Route path="/massage" element={<Massage />} />
         {/* <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       <Footer />
