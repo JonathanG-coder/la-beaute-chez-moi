@@ -2,23 +2,22 @@
   background-color: #f8f8f8;
   color: #333;
   padding: 40px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "box1 box2 "
-    ;
+  /* grid-template-areas: "box1 box2 "; */
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
 }
 
 .box1 {
-  grid-area: box1;
+  /* grid-area: box1; */
   display: flex;
   justify-content: center;
   margin-top: -30px;
@@ -30,21 +29,17 @@
 }
 
 .box2 {
+  /* grid-area: box2; */
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: flex-start;
 }
 
-.box2Info, .box2Lien {
+.box2Info,
+.box2Lien {
   flex: 1;
   text-align: start;
-}
-
-.box2 h3 {
-  font-size: 1.2rem;
-  color: #000;
-  border-bottom: 2px solid #000;
 }
 
 .box2 a {
@@ -61,7 +56,7 @@
 }
 
 .box3 {
-  grid-area: box3;
+  /* grid-area: box3; */
   display: flex;
   justify-content: start;
   margin-left: 60px;
@@ -78,7 +73,7 @@
 }
 
 .box4 {
-  grid-area: box4;
+  /* grid-area: box4; */
   text-align: center;
   font-size: 14px;
   margin-top: 20px;
@@ -107,7 +102,8 @@
     align-items: center;
   }
 
-  .box2Info, .box2Lien {
+  .box2Info,
+  .box2Lien {
     text-align: center;
   }
 }
