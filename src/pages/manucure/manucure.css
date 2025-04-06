@@ -1,8 +1,20 @@
+/* Styles communs pour toutes les pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
 .container {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .cont-header {
@@ -68,40 +80,69 @@
 
 
 
-.prestations{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "prestations-1g prestations-1dr"
-    "prestations-2g prestations-2dr";
-}
-
-.prestations-1g{
-    grid-area: prestations-1g;
-}
-
-.prestations-1dr{
-    grid-area: prestations-1dr;
-}
-.prestations-2g{
-    grid-area: prestations-2g;
-}
-.prestations-2dr{
-    grid-area: prestations-2dr;
-}
 
 
+.prestations-container {
+  text-align: center;
+  padding: 40px 0;
+}
 
-/* Responsive Design */
+.prestations-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.prestations-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 20px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.prestations-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ddd;
+  padding: 20px; 
+  position: relative;
+  flex-direction: column;
+  width: 80%; 
+  height: auto; 
+  box-sizing: border-box;
+  margin: 0 auto; 
+}
+
+.prestations-item img {
+  width: 80%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.prestations-item h3 {
+  font-size: 1.3rem; 
+  margin-top: 10px;
+}
+
+.prestations-item p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.prestations-item h3 + p {
+  margin-top: 15px; 
+}
+
 @media screen and (max-width: 768px) {
-  .cont-header {
-    flex-direction: column;
-    text-align: center;
+  .prestations-box {
+    grid-template-columns: 1fr; 
   }
 
-  .cont-header-titre,
-  .cont-header-img {
-    width: 100%;
+  .prestations-item img {
+    max-width: 100%;
+    height: auto;
   }
 }

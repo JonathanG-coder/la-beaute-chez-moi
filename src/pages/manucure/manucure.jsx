@@ -32,32 +32,35 @@ function manucure() {
         </p>
         <button>Prendre Rendez-vous</button>
       </div>
-      <div className="cont-prestations">
-      <h2>Mains et Pieds</h2>
-         <div className="prestations">
-             <div className="prestations-1g"><img src={posevernis} alt="pose de vernis sur ongles" /></div>
-            <div className="prestations-1dr"><h3>Pose de vernis</h3><p>...</p></div>
-             <div className="prestations-2g"><h3>Ongle en Gel</h3><p>...</p></div>
-            <div className="prestations-2dr"><img src={onglegel} alt="des mains sur une serviette de plage" /></div>
 
-         </div>
+      <div className="prestations-container">
+        <h2>Mains et Pieds</h2>
+        <div className="prestations-box">
+          <div className="prestations-item">
+            <img src={posevernis} alt="pose de vernis sur ongles" />
+          </div>
+          <div className="prestations-item">
+            <h3>Pose de vernis</h3>
+            <p>
+              Pose de vernis classique ou semi permanent : sublimez vos mains
+              avec une pose de vernis classique ou semi permanent. Je prends le
+              soin de limer vos ongles et repousser les cuticules avant la pose
+              de vernis afin d’avoir un travail de précision.
+            </p>
+          </div>
+          <div className="prestations-item">
+            <h3>Ongle en Gel</h3>
+            <p>
+              Avec capsule ou en chablon, apportez plus de longueur à vos ongles
+              et permettez-vous quelques folies avec des décorations Nail/art.
+            </p>
+          </div>
+          <div className="prestations-item">
+            <img src={onglegel} alt="des mains sur une serviette de plage" />
+          </div>
+        </div>
       </div>
-
-
-
-
     </div>
-
-    // <section>
-    //     <h2>Mains et Pieds</h2>
-    //     <div className="prestations">
-    //         <div className="prestations-1g"><img src={posevernis} alt="pose de vernis sur ongles" /></div>
-    //         <div className="prestations-1dr"><h3>Pose de vernis</h3><p>...</p></div>
-    //         <div className="prestations-2g"><h3>Ongle en Gel</h3><p>...</p></div>
-    //         <div className="prestations-2dr"><img src={onglegel} alt="des mains sur une serviette de plage" /></div>
-
-    //     </div>
-    // </section>
   );
 }
 
