@@ -1,5 +1,3 @@
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -9,13 +7,10 @@
   max-width: 100%;
 }
 
-
-
 .cont-header {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas:
-    "cont-header-titre cont-header-img";
+  grid-template-areas: "cont-header-titre cont-header-img";
   align-items: center;
   margin-top: 20px;
   background-color: #fbeaf3;
@@ -43,11 +38,6 @@
   height: auto;
   border-radius: 10px;
 }
-
-
-
-
-
 
 /* .cont-header {
   display: flex;
@@ -82,9 +72,6 @@
   border-radius: 10px;
 } */
 
-
-
-
 /* EXPLICATION  */
 .cont-explication {
   display: flex;
@@ -112,6 +99,8 @@
 .cont-explication button:hover {
   background-color: #e67878;
 }
+
+/* prestations et tarif */
 
 .prestations-container h2 {
   display: flex;
@@ -164,13 +153,11 @@
   margin-top: 15px;
 }
 
-
 /* tarif et prestation */
-
 
 .tarif-header {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
@@ -201,32 +188,35 @@
   border-radius: 10px;
 }
 
-/* tarif et prestation */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 768px) {
+  .cont-header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cont-header-titre"
+      "cont-header-img";
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cont-header-titre {
+    justify-content: center; /* centre horizontalement le titre */
+    padding: 10px;
+  }
+
+  .cont-header-img {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .cont-header-img img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
   .prestations-box {
     grid-template-columns: 1fr;
   }

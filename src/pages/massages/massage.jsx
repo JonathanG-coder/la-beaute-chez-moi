@@ -1,23 +1,19 @@
 import "./massage.css";
-import Massage from "../../assets/Massage.jpg"
+import Massage from "../../assets/Massage.jpg";
+import Affiche from "../../components/affiche/affiche";
 
 function regard() {
   return (
-    <div className="container">
-      <div className="cont-header">
-        <div className="cont-header-titre">
-          <h1>
-            MASSAGE
-          </h1>
-        </div>
-        <div className="cont-header-img">
-          <img
-            src={Massage}
-            alt="Une femme qui se fait masser le dos"
-          />
-        </div>
-      </div>
-    </div>
+    <Affiche
+      titre={`MASSAGE <br /> BIEN-ÊTRE`}
+      sousTitre="LE MASSAGE DETENTE"
+      image={Massage}
+      description={{
+        accroche: "Une pause pour le corps et l’esprit",
+        details:
+          "Nos massages relaxants sont pensés pour apaiser les tensions, améliorer la circulation et vous offrir un moment de sérénité profonde. Laissez-vous emporter dans un univers de douceur.",
+      }}
+    />
   );
 }
 

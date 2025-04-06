@@ -38,3 +38,64 @@
   height: auto;
   border-radius: 10px;
 }
+
+
+
+/* EXPLICATION  */
+.cont-explication {
+  display: flex;
+  flex-direction: column; /* Aligne en colonne */
+  align-items: center; /* Centre horizontalement */
+  justify-content: center; /* Centre verticalement */
+  text-align: center; /* Centre le texte */
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+.cont-explication button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #fd9c9c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cont-explication button:hover {
+  background-color: #e67878;
+}
+
+
+
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media screen and (max-width: 768px) {
+    .cont-header {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "cont-header-titre"
+        "cont-header-img";
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .cont-header-titre {
+      justify-content: center; /* centre horizontalement le titre */
+      padding: 10px;
+    }
+  
+    .cont-header-img {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .cont-header-img img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
