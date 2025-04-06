@@ -4,7 +4,7 @@ import logo from "../../assets/Logo-blanc.png";
 function Footer() {
   return (
     <footer>
-      <div className="container">
+      <div className="footer-container">
         {/* LOGO */}
         <div className="box1">
           <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />

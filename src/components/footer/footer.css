@@ -4,7 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -80,7 +80,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .footer-container {
     display: flex;
     flex-direction: column;
     grid-template-areas:

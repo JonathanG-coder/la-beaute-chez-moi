@@ -15,18 +15,18 @@ header img {
 
 
 /* Styles du menu grand ecran */
-.desktop-menu {
+.header-menu {
   display: flex;
 }
 
-.desktop-menu a {
+.header-menu a {
   text-decoration: none;
   color: #000;
   padding: 15px;
   margin: 0 10px;
 }
 
-.desktop-menu ul {
+.header-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -34,7 +34,7 @@ header img {
   align-items: center;
 }
 
-.desktop-menu li {
+.header-menu li {
   display: inline-block;
 }
 

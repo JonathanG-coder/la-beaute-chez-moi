@@ -12,7 +12,7 @@ function Header() {
     <header>
       <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
       
-      <nav className="desktop-menu">
+      <nav className="header-menu">
         <ul>
           <li><Link to="/">Accueil</Link></li>
           <li><Link to="/prestations">Prestations</Link></li>
