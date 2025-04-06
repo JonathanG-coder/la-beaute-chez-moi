@@ -5,9 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -61,7 +58,6 @@
   margin: auto;
 }
 
-
 .cont-explication button {
   margin-top: 15px;
   padding: 10px 15px;
@@ -74,18 +70,11 @@
   transition: background-color 0.3s;
 }
 
-
-
 .cont-explication button:hover {
   background-color: #e67878;
 }
 
-
-
-
-
-
-.prestations-container h2{
+.prestations-container h2 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -93,13 +82,12 @@
 
 .prestations-box {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr;   
-  gap: 20px; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 
 .prestations-item {
@@ -111,15 +99,15 @@
   padding: 20px;
   position: relative;
   flex-direction: column;
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   box-sizing: border-box;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .prestations-item img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -129,17 +117,79 @@
 }
 
 .prestations-item p {
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   margin-top: 10px;
 }
 
 .prestations-item h3 + p {
-  margin-top: 15px; 
+  margin-top: 15px;
 }
+
+
+/* tarif et prestation */
+
+
+.tarif-header {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #fd9c9c;
+}
+
+.tarif-header-titre {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.tarif-header-titre h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.tarif-header-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.tarif-header-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* tarif et prestation */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .prestations-box {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .prestations-item img {

@@ -2,6 +2,7 @@ import imgaccueil from "../../assets/Manucure&Beauté.jpg";
 import "./manucure.css";
 import posevernis from "../../assets/Manucure-et beaute-des-ongles.jpg";
 import onglegel from "../../assets/ongle-en-gel.jpg";
+import RDV from "../../assets/RDV.png"
 
 function manucure() {
   return (
@@ -58,6 +59,24 @@ function manucure() {
           <div className="prestations-item">
             <img src={onglegel} alt="des mains sur une serviette de plage" />
           </div>
+        </div>
+      </div>
+      <div className="tarif-header">
+        <div className="tarif-header-img">
+          <img
+            src={RDV}
+            alt="Une main qui a un telephone en main pour prendre un rendez-vous"
+          />
+        </div>
+        <div className="tarif-header-titre">
+          <h1>
+            PRESTATIONS & <br /> TARIFS
+          </h1>
+          <ul>
+            <li>Les Mains</li>
+            <li>Les Pieds</li>
+            <li>Forfait Mains & Pieds</li>
+          </ul>
         </div>
       </div>
     </div>
