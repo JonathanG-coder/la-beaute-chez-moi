@@ -1,12 +1,13 @@
 import imgaccueil from "../../assets/onglerie/Manucure&Beauté.jpg";
 import "./manucure.css";
-import posevernis from "../../assets/onglerie/Manucure-et beaute-des-ongles.jpg";
+import manucure1 from "../../assets/onglerie/manucure1.jpg";
 import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Tarif from "../../components/tarif/tarif";
+import Prestation from "../../components/prestation/prestation";
 
 function manucure() {
-  const prestations = [
+  const tarification = [
     {
       titre: "Manucure",
       sousChoix: ["Manucure = 20 €", "Manucure + pose de vernis : 30€ "]
@@ -44,7 +45,44 @@ function manucure() {
         }}
       />
       {/*  Prestations  */}
-      <div className="prestations-container">
+      <Prestation
+        titre={'Mains et Pieds'}
+        image={manucure1} 
+        sousTitre={'Pose de vernis'}
+        description={'Pose de vernis classique ou semi permanent : sublimez vos mains avec une pose de vernis classique ou semi permanent. Je prends le soin de limer vos ongles et repousser les cuticules avant la pose de vernis afin d’avoir un travail de précision.'}
+      />
+      
+      <Prestation
+        titre={''}
+        image={onglegel} 
+        sousTitre={'Ongle en gel'}
+        description={`Avec capsule ou en chablon, apportez plus de longueur à vos ongles
+        et permettez-vous quelques folies avec des décorations Nail Art.`}
+      />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="prestations-container">
         <h2>Mains et Pieds</h2>
         <div className="prestations-box">
           <div className="prestations-item">
@@ -70,9 +108,10 @@ function manucure() {
             <img src={onglegel} alt="des mains sur une serviette de plage" />
           </div>
         </div>
-      </div>
+      </div> */}
+
       {/* prestation et tarif  */}
-      <Tarif prestations={prestations} />
+      <Tarif prestations={tarification} />
     </div>,
   );
 }
