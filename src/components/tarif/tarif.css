@@ -39,8 +39,6 @@
   border-radius: 10px;
 }
 
-
-
 .menu-prestation {
   width: 100%;
   display: flex;
@@ -58,9 +56,7 @@
 .rubrique-prestation button {
   padding: 10px;
   font-size: 16px;
-  /* text-align: left; */
   background-color: #f0f0f0;
-  /* border: none; */
   cursor: pointer;
   transition: background 0.2s;
   border-radius: 5px;
@@ -90,23 +86,6 @@
   text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {
   .tarif-header {
@@ -119,7 +98,7 @@
   }
 
   .tarif-header-titre {
-    justify-content: center; 
+    justify-content: center;
     padding: 10px;
   }
 
