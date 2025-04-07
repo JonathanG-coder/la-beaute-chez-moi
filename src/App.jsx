@@ -12,6 +12,7 @@ import Extension from "./pages/regard/extension/extension";
 import Sourcils from "./pages/regard/sourcils/sourcils";
 import Prenatal from "./pages/massages/prenatal/prenatal";
 import Californien from "./pages/massages/californien/californien";
+import Tarif from "./components/tarif/tarif";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/sourcils" element={<Sourcils />} />
         <Route path="/prenatal" element={<Prenatal />} />
         <Route path="/californien" element={<Californien />} />
+        <Route path="/tarif" element={<Tarif />} />
         {/* <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       <Footer />

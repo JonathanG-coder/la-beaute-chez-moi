@@ -24,7 +24,7 @@ function manucure() {
                   maintenant votre rendez-vous pour une expérience beauté unique !`,
         }}
       />
-
+      {/*  Prestations  */}
       <div className="prestations-container">
         <h2>Mains et Pieds</h2>
         <div className="prestations-box">
@@ -50,24 +50,6 @@ function manucure() {
           <div className="prestations-item">
             <img src={onglegel} alt="des mains sur une serviette de plage" />
           </div>
-        </div>
-      </div>
-      <div className="tarif-header">
-        <div className="tarif-header-img">
-          <img
-            src={RDV}
-            alt="Une main qui a un telephone en main pour prendre un rendez-vous"
-          />
-        </div>
-        <div className="tarif-header-titre">
-          <h1>
-            PRESTATIONS & <br /> TARIFS
-          </h1>
-          <ul>
-            <li>Les Mains</li>
-            <li>Les Pieds</li>
-            <li>Forfait Mains & Pieds</li>
-          </ul>
         </div>
       </div>
     </div>
