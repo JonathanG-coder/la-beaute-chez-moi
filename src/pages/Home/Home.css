@@ -1,6 +1,6 @@
 /* -------- PRESENTATION -------- */
 .home-presentation {
-  background-image: url(../../assets/Presentation-accueil.jpg);
+  background-image: url(../../assets/accueil/Presentation-accueil.jpg);
   background-size: cover;
   background-position: center;
   height: 65vh;
@@ -163,17 +163,17 @@
 
 .item1 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/Beaute-du-regard.jpg");
+    url("../../assets/regard/Beaute-du-regard.jpg");
 }
 
 .item2 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/manucures.jpg");
+    url("../../assets/onglerie/manucures.jpg");
 }
 
 .item3 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/massages.jpg");
+    url("../../assets/massage/massages.jpg");
 }
 
 /* -------- AVIS CLIENT -------- */

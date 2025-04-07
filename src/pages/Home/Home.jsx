@@ -1,7 +1,7 @@
 import "./home.css";
 import { useState } from "react";
 import logo from "../../assets/logo/Logo-blanc.png";
-import Regard from "../../assets/regard/sourcils2.jpg";
+import bio from "../../assets/regard/sourcils2.jpg";
 
 function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -18,7 +18,7 @@ function Home() {
       <div className="bio">
         <div className="bio-img">
           <img
-            src={Regard}
+            src={bio}
             alt="Image d'une femme qui réalise des prestations de beauté du regard"
           />
         </div>
