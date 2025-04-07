@@ -1,7 +1,7 @@
 import "./tarif.css";
 import RDV from "../../assets/RDV.png";
 
-function tarif() {
+function tarif({ choix, sousChoix, }) {
   return (
     <div className="tarif-header">
       <div className="tarif-header-img">
@@ -11,14 +11,18 @@ function tarif() {
         />
       </div>
       <div className="tarif-header-titre">
-        <h1>
+        <h2>
           PRESTATIONS & <br /> TARIFS
-        </h1>
-        <ul>
-          <li>Les Mains</li>
-          <li>Les Pieds</li>
-          <li>Forfait Mains & Pieds</li>
-        </ul>
+        </h2>
+        <div className="menu-prestation">
+          <div className="rubrique-prestation">
+          <p>{choix}</p>
+          </div>
+          <div className="sousMenu-prestation">
+          <p>{sousChoix}</p>
+
+          </div>
+        </div>
       </div>
     </div>
   );

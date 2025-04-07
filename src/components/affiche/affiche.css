@@ -1,28 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cont-header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "cont-header-titre cont-header-img";
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fbeaf3;
+  padding: 40px;
+  border-radius: 10px;
+}
+
 .cont-header-titre {
   grid-area: cont-header-titre;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  font-size: 2rem;
+  text-align: start;
+  font-size: 1.8rem;
   font-weight: bold;
-  height: 100%;
+  padding: 20px;
   text-align: center;
 }
 
-.cont-header-titre h1 {
-  margin: 0;
-  line-height: 1.2;
+.cont-header-img {
+  grid-area: cont-header-img;
+  padding: 30px;
+  margin-top: 40px;
 }
+
+.cont-header-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 
 /* EXPLICATION  */
 .cont-explication {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
+  flex-direction: column; /* Aligne en colonne */
+  align-items: center; /* Centre horizontalement */
+  justify-content: center; /* Centre verticalement */
+  text-align: center; /* Centre le texte */
   width: 80%;
   padding: 20px;
   margin: auto;
@@ -45,28 +70,32 @@
 }
 
 
+
+
+/* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {
-  .cont-header {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "cont-header-titre"
-      "cont-header-img";
-    text-align: center;
-    padding: 20px;
+    .cont-header {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "cont-header-titre"
+        "cont-header-img";
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .cont-header-titre {
+      justify-content: center; /* centre horizontalement le titre */
+      padding: 10px;
+    }
+  
+    .cont-header-img {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .cont-header-img img {
+      width: 100%;
+      height: auto;
+    }
   }
-
-  .cont-header-titre {
-    justify-content: center; 
-    padding: 10px;
-  }
-
-  .cont-header-img {
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  .cont-header-img img {
-    width: 100%;
-    height: auto;
-  }
-}
+  

@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   height: 160px;
@@ -11,8 +11,6 @@ header img {
   width: 15%;
   height: auto;
 }
-
-
 
 /* Styles du menu grand ecran */
 .header-menu {
@@ -37,8 +35,6 @@ header img {
 .header-menu li {
   display: inline-block;
 }
-
-
 
 /* Styles du menu burger */
 .burger-menu {

@@ -4,6 +4,7 @@ import posevernis from "../../assets/Manucure-et beaute-des-ongles.jpg";
 import onglegel from "../../assets/ongle-en-gel.jpg";
 import RDV from "../../assets/RDV.png";
 import Affiche from "../../components/affiche/affiche";
+import tarif from "../../components/tarif/tarif";
 
 function manucure() {
   return (
@@ -52,7 +53,30 @@ function manucure() {
           </div>
         </div>
       </div>
-    </div>
+
+{/* prestation et tarif  */}
+         <tarif>
+
+        </tarif>
+
+
+    </div>,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   );
 }
 
