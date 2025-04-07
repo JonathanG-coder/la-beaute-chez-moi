@@ -2,9 +2,8 @@ import imgaccueil from "../../assets/Manucure&Beauté.jpg";
 import "./manucure.css";
 import posevernis from "../../assets/Manucure-et beaute-des-ongles.jpg";
 import onglegel from "../../assets/ongle-en-gel.jpg";
-import RDV from "../../assets/RDV.png";
 import Affiche from "../../components/affiche/affiche";
-import tarif from "../../components/tarif/tarif";
+import Tarif from "../../components/tarif/tarif";
 
 function manucure() {
   return (
@@ -55,28 +54,13 @@ function manucure() {
       </div>
 
 {/* prestation et tarif  */}
-         <tarif>
-
-        </tarif>
-
-
+         <Tarif
+         choix1={"Les Mains"}sousChoix1={"vernis main = 90$"}
+         choix2={"Les PIEDS"}sousChoix2={"vernis pieds = 90$"}
+         choix3={"Forfait Mains & Pieds"}sousChoix3={"vernis = 180$"}
+         
+         />
     </div>,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   );
 }
 
