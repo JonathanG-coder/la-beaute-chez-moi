@@ -71,16 +71,8 @@ function manucure() {
           </div>
         </div>
       </div>
-      {/* 🔽 Voici ton composant Tarif à la suite  */}
+      {/* prestation et tarif  */}
       <Tarif prestations={prestations} />
-
-{/* prestation et tarif  */}
-         {/* <Tarif
-         choix1={"Les Mains"}sousChoixA={"vernis main = 90$"}sousChoixB={"vernis main plus = 90$"}
-         choix2={"Les Pieds"}sousChoix2={"vernis pieds = 90$"}
-         choix3={"Forfait Mains & Pieds"}sousChoix3={"vernis = 180$"}
-         
-         /> */}
     </div>,
   );
 }
