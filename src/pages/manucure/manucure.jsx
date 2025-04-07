@@ -6,6 +6,25 @@ import Affiche from "../../components/affiche/affiche";
 import Tarif from "../../components/tarif/tarif";
 
 function manucure() {
+  const prestations = [
+    {
+      titre: "Manucure",
+      sousChoix: ["Manucure = 20 €", "Manucure + pose de vernis : 30€ "]
+    },
+    {
+      titre: "Vernis Semi permanent",
+      sousChoix: ["Pose de vernis semis permanent : 30€", "Dépose  et pose de vernis Semi permanent : 40€ ", "Dépose vernis semis permanent : 10€"]
+    },
+    {
+      titre: "Pose gel",
+      sousChoix: ["Pose complète en gel : 65 €", "Remplissage : 40 €", "Retrait ongle en gel : 25 €"]
+    },
+    {
+      titre: "Onglerie  pieds ",
+      sousChoix: ["Pose de vernis classique : 15 €", "Pose de vernis semis permanent : 30 €", "Dépose et pose de vernis Semi permanent : 40 €", "Dépose vernis semis permanent : 10 €"]
+    }
+  ];
+
   return (
     <div className="container">
       <Affiche
@@ -52,14 +71,16 @@ function manucure() {
           </div>
         </div>
       </div>
+      {/* 🔽 Voici ton composant Tarif à la suite  */}
+      <Tarif prestations={prestations} />
 
 {/* prestation et tarif  */}
-         <Tarif
-         choix1={"Les Mains"}sousChoix1={"vernis main = 90$"}
-         choix2={"Les PIEDS"}sousChoix2={"vernis pieds = 90$"}
+         {/* <Tarif
+         choix1={"Les Mains"}sousChoixA={"vernis main = 90$"}sousChoixB={"vernis main plus = 90$"}
+         choix2={"Les Pieds"}sousChoix2={"vernis pieds = 90$"}
          choix3={"Forfait Mains & Pieds"}sousChoix3={"vernis = 180$"}
          
-         />
+         /> */}
     </div>,
   );
 }

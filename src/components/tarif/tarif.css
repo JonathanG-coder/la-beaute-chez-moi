@@ -39,6 +39,63 @@
   border-radius: 10px;
 }
 
+
+/* a tester */
+
+.menu-prestation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rubrique-prestation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.rubrique-prestation button {
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f0f0f0;
+  /* border: none; */
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 5px;
+}
+
+.rubrique-prestation button:hover {
+  background-color: #e0e0e0;
+}
+
+.sousMenu-prestation {
+  background-color: #fafafa;
+  padding: 10px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  border-left: 3px solid #ccc;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {
   .tarif-header {
