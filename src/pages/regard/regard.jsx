@@ -1,5 +1,5 @@
 import "./regard.css";
-import regards from "../../assets/regard.jpg";
+import regards from "../../assets/regard/regard.jpg";
 
 function regard() {
   return (

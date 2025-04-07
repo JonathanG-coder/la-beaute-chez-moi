@@ -1,5 +1,5 @@
 import "./contact.css";
-import Contact from "../../assets/Contact.jpg";
+import Contact from "../../assets/contact/Contact.jpg";
 import Affiche from "../../components/affiche/affiche";
 
 function contact() {

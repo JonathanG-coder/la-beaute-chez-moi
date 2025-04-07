@@ -1,5 +1,5 @@
 import "./tarif.css";
-import RDV from "../../assets/RDV.png";
+import RDV from "../../assets/contact/RDV.png";
 import { useState } from "react";
 
 function tarif({ prestations }) {

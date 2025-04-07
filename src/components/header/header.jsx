@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../../assets/Logo-blanc.png";
+import logo from "../../assets/logo/Logo-blanc.png";
 import "../header/header.css";
 
 function Header() {

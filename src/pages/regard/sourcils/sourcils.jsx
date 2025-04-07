@@ -1,5 +1,5 @@
 import "./sourcils.css";
-import Extension from "../../../assets/Extension.jpg";
+import Extension from "../../../assets/regard/Extension.jpg";
 import Affiche from "../../../components/affiche/affiche";
 
 function sourcils() {

@@ -1,5 +1,5 @@
 import "./prenatal.css";
-import Prenatal from "../../../assets/prenatal1.jpg";
+import Prenatal from "../../../assets/massage/prenatal1.jpg";
 import Affiche from "../../../components/affiche/affiche";
 
 function prenatal() {

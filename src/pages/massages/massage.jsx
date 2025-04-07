@@ -1,5 +1,5 @@
 import "./massage.css";
-import Massage from "../../assets/Massage.jpg";
+import Massage from "../../assets/massage/Massage.jpg";
 import Affiche from "../../components/affiche/affiche";
 
 function regard() {

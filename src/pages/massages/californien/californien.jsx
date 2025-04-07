@@ -1,5 +1,5 @@
 import "./californien.css";
-import Californien from "../../../assets/californien.jpg";
+import Californien from "../../../assets/massage/californien.jpg";
 import Affiche from "../../../components/affiche/affiche";
 
 function californien() {

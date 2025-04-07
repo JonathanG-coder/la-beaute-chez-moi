@@ -1,5 +1,5 @@
 import "./extension.css";
-import Extension1 from "../../../assets/Extension1.jpg"
+import Extension1 from "../../../assets/regard/Extension1.jpg"
 import Affiche from "../../../components/affiche/affiche";
 
 function extension() {

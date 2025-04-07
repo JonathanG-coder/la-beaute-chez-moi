@@ -1,7 +1,7 @@
-import imgaccueil from "../../assets/Manucure&Beauté.jpg";
+import imgaccueil from "../../assets/onglerie/Manucure&Beauté.jpg";
 import "./manucure.css";
-import posevernis from "../../assets/Manucure-et beaute-des-ongles.jpg";
-import onglegel from "../../assets/ongle-en-gel.jpg";
+import posevernis from "../../assets/onglerie/Manucure-et beaute-des-ongles.jpg";
+import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Tarif from "../../components/tarif/tarif";
 

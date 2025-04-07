@@ -1,5 +1,5 @@
 import "./rehaussement.css";
-import Rehaussement from "../../../assets/rehaussement-cils.jpeg"
+import Rehaussement from "../../../assets/regard/rehaussement-cils.jpeg"
 import Affiche from "../../../components/affiche/affiche";
 
 function rehaussement() {
