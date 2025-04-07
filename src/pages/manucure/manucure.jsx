@@ -73,6 +73,7 @@ function manucure() {
         sousTitre={"Ongle en gel"}
         description={`Avec capsule ou en chablon, apportez plus de longueur à vos ongles
         et permettez-vous quelques folies avec des décorations Nail Art.`}
+        reverse={true}
       />
 
       {/*  Tarif  */}

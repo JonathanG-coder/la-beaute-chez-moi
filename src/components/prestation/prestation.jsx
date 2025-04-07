@@ -1,10 +1,10 @@
 import "./prestation.css";
 
-function Prestation({titre, image, sousTitre, description}) {
+function Prestation({titre, image, sousTitre, description, reverse = false}) {
   return (
     <div className="prestations-container">
       <h2 dangerouslySetInnerHTML={{ __html: titre }} />
-      <div className="prestations-box">
+      <div className={`prestations-box ${reverse ? "reverse" : ""}`}>
         <div className="prestations-item">
           <img src={image} alt={sousTitre} />
         </div>

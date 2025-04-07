@@ -1,5 +1,5 @@
 .prestations-container {
-  padding: 2rem;
+  /* padding: 2rem; */
   max-width: 1200px;
   margin: auto;
 }
@@ -14,6 +14,10 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+}
+
+.prestations-box.reverse {
+  flex-direction: row-reverse;
 }
 
 .prestations-item {
@@ -40,3 +44,33 @@
   font-size: 1rem;
   line-height: 1.6;
 }
+
+
+@media screen and (max-width: 768px) {
+  .prestations-box,
+  .prestations-box.reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prestations-item {
+    width: 350px;
+    height: 300px;
+  }
+
+  .prestations-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .prestations-item h3,
+  .prestations-item p {
+    text-align: center;
+  }
+}
+
+
+
+
