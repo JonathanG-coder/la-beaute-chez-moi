@@ -12,6 +12,7 @@ function contact() {
         accroche: "Vous souhaitez me contacter ?",
         details: `Adressez-votre demande : xx@gmail.Com. C'est avec plaisir que je vous répondrai du lundi au dimanche, le plus vite possible`,
       }}
+      showButton={false}
     />
   );
 }

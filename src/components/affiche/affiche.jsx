@@ -2,7 +2,7 @@ import "./affiche.css";
 
 
 
-function affiche({ titre, sousTitre, image, description,}) {
+function affiche({ titre, sousTitre, image, description, showButton = true}) {
   return (
     <div className="container">
       <div className="cont-header">
@@ -17,7 +17,7 @@ function affiche({ titre, sousTitre, image, description,}) {
         <h2>{sousTitre}</h2>
         <p>{description.accroche}</p>
         <p>{description.details}</p>
-        <button>Prendre Rendez-vous</button>
+        {showButton && <button>Prendre Rendez-vous</button>}
       </div>
     </div>
   );
