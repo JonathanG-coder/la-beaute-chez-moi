@@ -1,46 +1,19 @@
-import "../contact/contact.css"
+import "./contact.css";
+import Contact from "../../assets/Contact.jpg";
+import Affiche from "../../components/affiche/affiche";
 
-
-function Contact() {
-  
-
+function contact() {
   return (
-    <div className="box2-info">
-    <div className="box2-info boxA">
-      <p>
-        <strong>Adresse :</strong>
-        <a
-          href="https://www.google.com/maps/place/64250+Espelette/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>Espelette</p>
-        </a>
-      </p>
-    </div>
-    <div className="box2-info boxB">
-      <p>
-        <strong>Téléphone :</strong>
-      </p>
-      <p>00 11 22 33 44 </p>
-    </div>
-    <div className="box2-info boxC">
-      <p>
-        <strong>Horaires :</strong>
-      </p>
-      <p>Selon RDV</p>
-    </div>
-    <div className="box2-info boxD">
-      <p>
-        <strong>E-mail :</strong>
-      </p>
-      <p>
-        {" "}
-        <a href="mailto:xx@gmail.com">Jean-beaudruche@gmail.com</a>
-      </p>
-    </div>
-  </div>
+    <Affiche
+      titre={`CONTACTER GABRIELA`}
+      sousTitre="HELLO"
+      image={Contact}
+      description={{
+        accroche: "Vous souhaitez me contacter ?",
+        details: `Adressez-votre demande : xx@gmail.Com. C'est avec plaisir que je vous répondrai du lundi au dimanche, le plus vite possible`,
+      }}
+    />
   );
 }
 
-export default Contact;
+export default contact;

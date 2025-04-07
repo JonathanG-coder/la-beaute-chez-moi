@@ -13,6 +13,7 @@ import Sourcils from "./pages/regard/sourcils/sourcils";
 import Prenatal from "./pages/massages/prenatal/prenatal";
 import Californien from "./pages/massages/californien/californien";
 import Tarif from "./components/tarif/tarif";
+import Contact from "./pages/contact/contact";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path="/prenatal" element={<Prenatal />} />
         <Route path="/californien" element={<Californien />} />
         <Route path="/tarif" element={<Tarif />} />
-        {/* <Route path="/contact" element={<Contact />} />  */}
+        <Route path="/contact" element={<Contact />} /> 
+         {/* <Route path="/contact" element={<Contact />} />  */}
       </Routes>
       <Footer />
     </Router>

@@ -2,7 +2,7 @@ import "./affiche.css";
 
 
 
-function affiche({ titre, sousTitre, image, description }) {
+function affiche({ titre, sousTitre, image, description,}) {
   return (
     <div className="container">
       <div className="cont-header">
