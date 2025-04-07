@@ -2,7 +2,7 @@ import "./tarif.css";
 import RDV from "../../assets/contact/RDV.png";
 import { useState } from "react";
 
-function tarif({ prestations }) {
+function Tarif({ prestations }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -45,4 +45,4 @@ function tarif({ prestations }) {
     </div>
   );
 }
-export default tarif;
+export default Tarif;

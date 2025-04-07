@@ -1,4 +1,4 @@
-import imgaccueil from "../../assets/onglerie/Manucure&Beauté.jpg";
+import imgaccueil from "../../assets/onglerie/Manucure&Beaute.jpg";
 import "./manucure.css";
 import manucure1 from "../../assets/onglerie/manucure1.jpg";
 import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
@@ -10,20 +10,33 @@ function manucure() {
   const tarification = [
     {
       titre: "Manucure",
-      sousChoix: ["Manucure = 20 €", "Manucure + pose de vernis : 30€ "]
+      sousChoix: ["Manucure = 20 €", "Manucure + pose de vernis : 30€ "],
     },
     {
       titre: "Vernis Semi permanent",
-      sousChoix: ["Pose de vernis semis permanent : 30€", "Dépose  et pose de vernis Semi permanent : 40€ ", "Dépose vernis semis permanent : 10€"]
+      sousChoix: [
+        "Pose de vernis semis permanent : 30€",
+        "Dépose  et pose de vernis Semi permanent : 40€ ",
+        "Dépose vernis semis permanent : 10€",
+      ],
     },
     {
       titre: "Pose gel",
-      sousChoix: ["Pose complète en gel : 65 €", "Remplissage : 40 €", "Retrait ongle en gel : 25 €"]
+      sousChoix: [
+        "Pose complète en gel : 65 €",
+        "Remplissage : 40 €",
+        "Retrait ongle en gel : 25 €",
+      ],
     },
     {
       titre: "Onglerie  pieds ",
-      sousChoix: ["Pose de vernis classique : 15 €", "Pose de vernis semis permanent : 30 €", "Dépose et pose de vernis Semi permanent : 40 €", "Dépose vernis semis permanent : 10 €"]
-    }
+      sousChoix: [
+        "Pose de vernis classique : 15 €",
+        "Pose de vernis semis permanent : 30 €",
+        "Dépose et pose de vernis Semi permanent : 40 €",
+        "Dépose vernis semis permanent : 10 €",
+      ],
+    },
   ];
 
   return (
@@ -46,73 +59,25 @@ function manucure() {
       />
       {/*  Prestations  */}
       <Prestation
-        titre={'Mains et Pieds'}
-        image={manucure1} 
-        sousTitre={'Pose de vernis'}
-        description={'Pose de vernis classique ou semi permanent : sublimez vos mains avec une pose de vernis classique ou semi permanent. Je prends le soin de limer vos ongles et repousser les cuticules avant la pose de vernis afin d’avoir un travail de précision.'}
+        titre={"Mains et Pieds"}
+        image={manucure1}
+        sousTitre={"Pose de vernis"}
+        description={
+          "Pose de vernis classique ou semi permanent : sublimez vos mains avec une pose de vernis classique ou semi permanent. Je prends le soin de limer vos ongles et repousser les cuticules avant la pose de vernis afin d’avoir un travail de précision."
+        }
       />
-      
+
       <Prestation
-        titre={''}
-        image={onglegel} 
-        sousTitre={'Ongle en gel'}
+        titre={""}
+        image={onglegel}
+        sousTitre={"Ongle en gel"}
         description={`Avec capsule ou en chablon, apportez plus de longueur à vos ongles
         et permettez-vous quelques folies avec des décorations Nail Art.`}
       />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* <div className="prestations-container">
-        <h2>Mains et Pieds</h2>
-        <div className="prestations-box">
-          <div className="prestations-item">
-            <img src={posevernis} alt="pose de vernis sur ongles" />
-          </div>
-          <div className="prestations-item">
-            <h3>Pose de vernis</h3>
-            <p>
-              Pose de vernis classique ou semi permanent : sublimez vos mains
-              avec une pose de vernis classique ou semi permanent. Je prends le
-              soin de limer vos ongles et repousser les cuticules avant la pose
-              de vernis afin d’avoir un travail de précision.
-            </p>
-          </div>
-          <div className="prestations-item">
-            <h3>Ongle en Gel</h3>
-            <p>
-              Avec capsule ou en chablon, apportez plus de longueur à vos ongles
-              et permettez-vous quelques folies avec des décorations Nail/art.
-            </p>
-          </div>
-          <div className="prestations-item">
-            <img src={onglegel} alt="des mains sur une serviette de plage" />
-          </div>
-        </div>
-      </div> */}
-
-      {/* prestation et tarif  */}
+      {/*  Tarif  */}
       <Tarif prestations={tarification} />
-    </div>,
+    </div>
   );
 }
 
