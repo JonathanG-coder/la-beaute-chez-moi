@@ -47,7 +47,7 @@ function manucure() {
         image={imgaccueil}
         description={{
           accroche:
-            "Une pause pour le corps et l’esprit. Mettre une phrase d'accroche",
+            "Elégance et soin au bout des ongles",
           details: `Offrez à vos mains et pieds un soin digne de ce nom avec notre service
                   de pose de vernis et d'ongles en gel. Que ce soit pour une occasion
                   spéciale ou pour un quotidien élégant, nous mettons à votre

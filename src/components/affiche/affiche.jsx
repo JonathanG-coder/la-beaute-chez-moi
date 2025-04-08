@@ -2,7 +2,7 @@ import "./affiche.css";
 
 
 
-function affiche({ titre, sousTitre, image, description, showButton = true}) {
+function Affiche({ titre, sousTitre, image, description, showButton = true}) {
   return (
     <div className="container">
       <div className="cont-header">
@@ -23,4 +23,4 @@ function affiche({ titre, sousTitre, image, description, showButton = true}) {
   );
 }
 
-export default affiche;
+export default Affiche;
