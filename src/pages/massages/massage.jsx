@@ -35,7 +35,7 @@ function regard() {
       />
       {/*  Prestations  */}
       <Prestation
-        titre={"Vos massage coup de coeur"}
+        titre={"Vos massages coup de coeur"}
         image={Californien2}
         sousTitre={"Massage Californien 🌿"}
         description={
