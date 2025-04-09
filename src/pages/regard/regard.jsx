@@ -52,7 +52,7 @@ function regard() {
       <Prestation
         titre={"Votre Regard"}
         image={Rehaussement2}
-        sousTitre={"Le rehaussement de cils"}
+        sousTitre={"Le rehaussement de cils 🌸"}
         description={
           "Sublimez votre regard avec notre rehaussement de cils. Une solution naturelle pour des cils courbés, volumineux et longs"
         }
@@ -60,14 +60,14 @@ function regard() {
       <Prestation
         titre={""}
         image={Rehaussement3}
-        sousTitre={"L'extension de cils"}
+        sousTitre={"L'extension de cils ✨"}
         description={`Optez pour nos extensions de cils : Volume Russe pour un regard intense ou Cil à Cil pour un effet plus naturel. Des cils sublimes, sur mesure, pour chaque occasion.`}
         reverse={true}
       />
       <Prestation
         titre={""}
         image={Sourcils}
-        sousTitre={"Vos sourcils"}
+        sousTitre={"Vos sourcils 🖌️"}
         description={
           "Sublimez vos sourcils avec nos services de restructuration, teinture ou Brow Lift. Obtenez des sourcils parfaits, définis et naturels."
         }

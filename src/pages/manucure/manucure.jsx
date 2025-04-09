@@ -61,7 +61,7 @@ function manucure() {
       <Prestation
         titre={"Mains et Pieds"}
         image={manucure1}
-        sousTitre={"Pose de vernis"}
+        sousTitre={"Pose de vernis 💅"}
         description={
           "Pose de vernis classique ou semi permanent : sublimez vos mains avec une pose de vernis classique ou semi permanent. Je prends le soin de limer vos ongles et repousser les cuticules avant la pose de vernis afin d’avoir un travail de précision."
         }
@@ -70,7 +70,7 @@ function manucure() {
       <Prestation
         titre={""}
         image={onglegel}
-        sousTitre={"Ongle en gel"}
+        sousTitre={"Ongle en gel 💎"}
         description={`Avec capsule ou en chablon, apportez plus de longueur à vos ongles
         et permettez-vous quelques folies avec des décorations Nail Art.`}
         reverse={true}
