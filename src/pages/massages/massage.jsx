@@ -4,8 +4,23 @@ import Affiche from "../../components/affiche/affiche";
 import Prestation from "../../components/prestation/prestation";
 import Californien2 from "../../assets/massage/californien2.jpg";
 import Prenatal2 from "../../assets/massage/prenatal2.jpg";
+import Tarif from "../../components/tarif/tarif";
 
 function regard() {
+  const tarification = [
+    {
+      titre: "Le Californien",
+      sousChoix: ["Massage Californien 30 min : 45 €", 
+        "Massage Californien  1h : 90 €"],
+    },
+    {
+      titre: "Future Maman",
+      sousChoix: [
+        "Massage Femme Enceinte 1h : 80 €"
+      ],
+    },
+  ];
+  
   return (
     <div className="container">
       <Affiche
@@ -35,6 +50,8 @@ function regard() {
         Pensé pour accompagner la future maman en douceur, le massage prénatal apaise les tensions et procure un véritable cocon de détente. Un moment privilégié pour se reconnecter à soi… et à son bébé.`}
         reverse={true}
       />
+      {/*  Tarif  */}
+      <Tarif prestations={tarification} />
     </div>
   );
 }
