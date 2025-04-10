@@ -23,9 +23,9 @@ function extension() {
       sousTitre="LE REHAUSSEMENT DE CILS"
       image={Extension1}
       description={{
-        accroche: "A quoi sert le rehaussement cils ?",
+        accroche: "A quoi sert l'extension de cils ?",
         details:
-          "A la fois à redessiner votre regard, à l’agrandir et à le magnifier, grâce à une technique donnant aux cils une nouvelle courbe, plus ample et plus élégante. Rassurez-vous : le résultat n’a rien d’artificiel.",
+          "L'extension de cils sublimera votre regard en apportant longueur, courbure et volume à vos cils naturels, pour un effet intense et glamour, sans avoir besoin de mascara",
       }}
     />
     
