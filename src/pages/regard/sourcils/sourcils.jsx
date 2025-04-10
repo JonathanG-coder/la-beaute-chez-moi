@@ -1,5 +1,4 @@
 import "./sourcils.css";
-import Extension from "../../../assets/regard/Extension.jpg";
 import Affiche from "../../../components/affiche/affiche";
 import Explication from "../../../components/explication/explication";
 import Tarif from "../../../components/tarif/tarif";
