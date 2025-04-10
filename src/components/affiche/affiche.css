@@ -74,6 +74,7 @@
 
 /* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {
+    
     .cont-header {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -86,6 +87,7 @@
     .cont-header-titre {
       justify-content: center; 
       padding: 10px;
+      font-size: 20px;
     }
   
     .cont-header-img {
