@@ -1,7 +1,8 @@
+/* ====== Container principal ====== */
 .prestations-container {
-  /* padding: 2rem; */
   max-width: 1200px;
   margin: auto;
+
 }
 
 .prestations-container h2 {
@@ -10,31 +11,41 @@
   font-size: 2rem;
 }
 
+/* ====== Boîte de prestation ====== */
 .prestations-box {
   display: flex;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
 }
 
 .prestations-box.reverse {
   flex-direction: row-reverse;
 }
 
+/* ====== Élément de prestation ====== */
 .prestations-item {
-  width: 400px;
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  border: 2px solid #ddd;
+  padding: 20px;
+  position: relative;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
+/* ====== Image ====== */
 .prestations-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
 
+/* ====== Textes ====== */
 .prestations-item h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -45,24 +56,17 @@
   line-height: 1.6;
 }
 
-
+/* ====== Responsive ====== */
 @media screen and (max-width: 768px) {
-  .prestations-box,
-  .prestations-box.reverse {
+  .prestations-box {
     flex-direction: column;
     align-items: center;
   }
 
   .prestations-item {
-    width: 350px;
-    height: 300px;
-  }
-
-  .prestations-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .prestations-item h3,
@@ -70,7 +74,3 @@
     text-align: center;
   }
 }
-
-
-
-
