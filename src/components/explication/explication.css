@@ -29,7 +29,10 @@
 
 .explicationGauche p {
   text-align: justify;
+  padding-left: 50px; 
+  padding-right: 50px; 
 }
+
 
 /* ========== IMAGE À DROITE ========== */
 .explicationDroite img {
