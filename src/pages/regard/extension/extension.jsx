@@ -20,7 +20,7 @@ function extension() {
     <div className="container">
     <Affiche
       titre={`BEAUTE DU REGARD`}
-      sousTitre="LE REHAUSSEMENT DE CILS"
+      sousTitre="L'EXTENSION DE CILS"
       image={Extension1}
       description={{
         accroche: "A quoi sert l'extension de cils ?",
