@@ -33,6 +33,7 @@
   border: 2px solid #ddd;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 /* ====== Image ====== */
@@ -52,6 +53,7 @@
 .prestations-item p {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* ====== Responsive mobile ====== */

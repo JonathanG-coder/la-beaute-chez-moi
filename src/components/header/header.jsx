@@ -10,7 +10,9 @@ function Header() {
 
   return (
     <header>
-      <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
+      <Link to="/">
+        <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
+      </Link>
 
       <nav className="header-menu">
         <ul>
