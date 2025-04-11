@@ -112,7 +112,7 @@ header img {
   top: 0;
   right: -100%;
   width: 250px;
-  height: 30vh;
+  height: 60vh;
   background-color: #ffffff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
@@ -155,3 +155,20 @@ header img {
     display: block;
   }
 }
+/* Sous-menu mobile */
+.mobile-dropdown {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.mobile-dropdown li {
+  padding: 8px 0;
+  text-align: left;
+}
+
+.mobile-dropdown li a {
+  font-size: 16px;
+  color: #333;
+}
+

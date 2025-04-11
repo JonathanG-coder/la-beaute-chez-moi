@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import logo from "../../assets/logo/Logo-blanc.png";
 import "../header/header.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showDropdownMobile, setShowDropdownMobile] = useState(false);
 
   return (
     <header>
@@ -13,26 +14,19 @@ function Header() {
 
       <nav className="header-menu">
         <ul>
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Prestations
-              <i class="fa fa-caret-down"></i>
+          <li><Link to="/">Accueil</Link></li>
+          <div className="dropdown">
+            <button className="dropbtn">
+              Prestations <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <a href="/manucure">Onglerie</a>
-              <a href="/regard">Beaute du Regard</a>
+              <a href="/regard">Beauté du Regard</a>
               <a href="/massage">Massages</a>
             </div>
           </div>
-          <li>
-            <Link to="/prendre-rendez-vous">Prendre Rendez-vous</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          <li><Link to="/prendre-rendez-vous">Prendre Rendez-vous</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
 
@@ -42,26 +36,21 @@ function Header() {
 
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <ul>
-          <li>
-            <Link to="/" onClick={() => setIsOpen(false)}>
-              Accueil
-            </Link>
+          <li><Link to="/" onClick={() => setIsOpen(false)}>Accueil</Link></li>
+
+          <li onClick={() => setShowDropdownMobile(!showDropdownMobile)} style={{ cursor: "pointer" }}>
+            Prestations {showDropdownMobile ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            {showDropdownMobile && (
+              <ul className="mobile-dropdown">
+                <li><Link to="/manucure" onClick={() => setIsOpen(false)}>Onglerie</Link></li>
+                <li><Link to="/regard" onClick={() => setIsOpen(false)}>Beauté du Regard</Link></li>
+                <li><Link to="/massage" onClick={() => setIsOpen(false)}>Massages</Link></li>
+              </ul>
+            )}
           </li>
-          <li>
-            <Link to="/prestations" onClick={() => setIsOpen(false)}>
-              Prestations
-            </Link>
-          </li>
-          <li>
-            <Link to="/prendre-rendez-vous" onClick={() => setIsOpen(false)}>
-              Prendre Rendez-vous
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>
-              Contact
-            </Link>
-          </li>
+
+          <li><Link to="/prendre-rendez-vous" onClick={() => setIsOpen(false)}>Prendre Rendez-vous</Link></li>
+          <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
         </ul>
       </div>
     </header>
