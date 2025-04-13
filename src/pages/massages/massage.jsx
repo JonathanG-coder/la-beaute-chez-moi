@@ -41,6 +41,7 @@ function regard() {
         description={
           "Offrez à votre corps une évasion sensorielle. Le massage californien, aux gestes lents et enveloppants, libère les tensions en douceur et favorise une profonde détente. Une bulle de bien-être rien que pour vous."
         }
+        lien="/californien"
       />
       <Prestation
         titre={""}
@@ -48,6 +49,7 @@ function regard() {
         sousTitre={"Massage Prenatal 💕"}
         description={`Un instant de bien-être pour maman et bébé.
         Pensé pour accompagner la future maman en douceur, le massage prénatal apaise les tensions et procure un véritable cocon de détente. Un moment privilégié pour se reconnecter à soi… et à son bébé.`}
+        lien="/prenatal"
         reverse={true}
       />
       {/*  Tarif  */}

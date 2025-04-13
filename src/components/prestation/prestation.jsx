@@ -1,6 +1,7 @@
 import "./prestation.css";
+import { Link } from "react-router-dom";
 
-function Prestation({titre, image, sousTitre, description, reverse = false}) {
+function Prestation({titre, image, sousTitre, description, reverse = false, lien}) {
   return (
     <div className="prestations-container">
       <h2 dangerouslySetInnerHTML={{ __html: titre }} />
@@ -11,7 +12,13 @@ function Prestation({titre, image, sousTitre, description, reverse = false}) {
         <div className="prestations-item">
           <h3>{sousTitre}</h3>
           <p>{description}</p>
+          {lien && (
+          <Link to={lien} className="prestation-btn">
+            En savoir +
+          </Link>
+          )}
         </div>
+        
       </div>
     </div>
   );

@@ -56,12 +56,14 @@ function regard() {
         description={
           "Sublimez votre regard avec notre rehaussement de cils. Une solution naturelle pour des cils courbés, volumineux et longs"
         }
+        lien="/rehaussement"
       />
       <Prestation
         titre={""}
         image={Rehaussement3}
         sousTitre={"L'extension de cils ✨"}
         description={`Optez pour nos extensions de cils : Volume Russe pour un regard intense ou Cil à Cil pour un effet plus naturel. Des cils sublimes, sur mesure, pour chaque occasion.`}
+        lien="/extension"
         reverse={true}
       />
       <Prestation
@@ -71,6 +73,7 @@ function regard() {
         description={
           "Sublimez vos sourcils avec nos services de restructuration, teinture ou Brow Lift. Obtenez des sourcils parfaits, définis et naturels."
         }
+        lien="/sourcils"
       />
       {/*  Tarif  */}
       <Tarif prestations={tarification} />

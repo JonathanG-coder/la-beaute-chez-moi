@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-direction: row; /* Par défaut : image + texte côte à côte */
+  flex-direction: row;
 }
 
 .prestations-box.reverse {
@@ -56,11 +56,28 @@
   text-align: justify;
 }
 
+.prestation-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #fd9c9c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.prestation-btn:hover {
+  background-color: #e67878;
+}
+
 /* ====== Responsive mobile ====== */
 @media screen and (max-width: 768px) {
   .prestations-box,
   .prestations-box.reverse {
-    flex-direction: column !important; /* Force vertical empilé */
+    flex-direction: column !important;
     align-items: center;
   }
 
