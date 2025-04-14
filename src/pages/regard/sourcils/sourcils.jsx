@@ -34,6 +34,7 @@ function sourcils() {
     <Explication
     titre={"Entretien des sourcils 💖"}
     texte={`Sublimez votre regard avec un entretien de sourcils sur-mesure. Que ce soit pour une épilation précise, une mise en forme ou une teinture, je vous aide à révéler la beauté naturelle de vos sourcils. Je vous garantis un résultat impeccable et personnalisé, en harmonie avec la forme de votre visage, pour un regard parfaitement structuré et élégant.`}
+    lien="/regard"
     image={sourcils3}
   />
   {/*  Tarif  */}

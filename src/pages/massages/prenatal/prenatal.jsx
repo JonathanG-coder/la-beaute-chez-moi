@@ -28,6 +28,7 @@ function prenatal() {
       <Explication
         titre={"Massage Prenatal 🤰"}
         texte={`Le massage prénatal est un soin spécialement conçu pour accompagner les futures mamans pendant leur grossesse. Ce massage doux et apaisant aide à soulager les douleurs liées aux changements corporels, à réduire le stress et à favoriser une détente profonde. Grâce à des techniques de massage ciblées, il améliore la circulation sanguine, réduit les tensions musculaires et permet de se reconnecter avec son corps de manière bienveillante. Un moment de sérénité et de bien-être essentiel pour la future maman et son bébé.`}
+        lien="/massage"
         image={Prenatal}
       />
       {/*  Tarif  */}

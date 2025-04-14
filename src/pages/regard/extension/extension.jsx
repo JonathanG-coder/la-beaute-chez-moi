@@ -34,6 +34,7 @@ function extension() {
     <Explication
     titre={"Extension de cils ✨"}
     texte={`Offrez à votre regard une touche de glamour avec mes services d'extensions de cils. Que vous choisissiez la pose cil à cil pour un effet naturel ou le volume russe pour un regard plus intense, je vous garantis un résultat soigné et adapté à vos envies. Je propose également un service de dépose de cils pour retirer vos extensions en toute sécurité.`}
+    lien="/regard"
     image={Extension}
   />
   {/*  Tarif  */}

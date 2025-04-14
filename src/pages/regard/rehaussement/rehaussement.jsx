@@ -39,6 +39,7 @@ function rehaussement() {
         Pour celles qui aiment le make-up, pas d’inquiétude : votre routine peut continuer normalement, le rehaussement reste intact.
 
         Et pour un regard encore plus harmonieux, pensez à compléter ce soin par une mise en beauté des sourcils : épilation, pince, teinture… À vous le regard parfait !`}
+        lien="/regard"
         image={Rehaussement4}
       />
       {/*  Tarif  */}
