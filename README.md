@@ -32,7 +32,8 @@ Un site web moderne pour la vente de prestations de beauté, incluant des servic
 
 Voici un aperçu d'une des pages principales, présentant les services d'ongleries :
 
-![Home](https://github.com/user-attachments/assets/acf7230b-cde2-403b-b8cc-4527db1f0d37)
+![Onglerie](https://github.com/user-attachments/assets/074d9bfe-41e0-461e-9128-6577c550d61f)
+
 
 
 ---
