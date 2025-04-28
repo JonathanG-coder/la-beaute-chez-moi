@@ -26,11 +26,11 @@ header img {
 
 /* Les icônes de changement de mode en blanc ou noir selon l'état */
 .dark-mode-toggle.dark svg {
-  fill: #fff !important; /* L'icône de la lune en blanc en mode sombre */
+  fill: #fff !important; 
 }
 
 .dark-mode-toggle.light svg {
-  fill: #000 !important; /* L'icône du soleil en noir en mode clair */
+  fill: #000 !important; 
 }
 
 /* ------------ Menu principal ------------- */
@@ -57,33 +57,33 @@ header img {
 /* ------------ Mode sombre pour le header ------------------- */
 
 body.dark header {
-  background-color: #000 !important; /* Fond noir pour le header en mode sombre */
+  background-color: #000 !important; 
 }
 
 body.dark .header-menu a {
-  color: #fff !important; /* Liens en blanc pour le mode sombre */
+  color: #fff !important;
 }
 
 body.dark .header-menu a:hover {
-  color: #ccc !important; /* Liens gris clair au survol */
+  color: #ccc !important;
 }
 
 /* Mode sombre spécifique pour le bouton "Prestations" */
 body.dark .dropdown .dropbtn {
-  color: #fff !important; /* Texte du bouton "Prestations" en blanc en mode sombre */
+  color: #fff !important;
 }
 
 /* Menu dropdown en mode sombre */
 body.dark .dropdown-content {
-  background-color: #333 !important; /* Fond du menu déroulant sombre */
+  background-color: #333 !important; 
 }
 
 body.dark .dropdown-content a {
-  color: #fff !important; /* Liens dans le dropdown en blanc */
+  color: #fff !important; 
 }
 
 body.dark .dropdown-content a:hover {
-  background-color: #555 !important; /* Fond plus clair pour les liens au survol */
+  background-color: #555 !important;
 }
 
 /* ------------ Dropdown (Menu Déroulant) ------------- */
@@ -143,14 +143,14 @@ body.dark .dropdown-content a:hover {
   z-index: 10;
 }
 
-/* Assurez-vous que les icônes SVG sont correctement ciblées */
+
 body.dark .burger-menu svg {
-  fill: #fff !important; /* Icône burger en blanc pour mode sombre */
+  fill: #fff !important;
 }
 
 body.dark .burger-menu .burger-icon, 
 body.dark .burger-menu .close-icon {
-  fill: #fff !important; /* Assurez-vous que les icônes sont en blanc en mode sombre */
+  fill: #fff !important; 
 }
 
 /* Menu mobile */
@@ -192,15 +192,15 @@ body.dark .burger-menu .close-icon {
 /* ------------ Mode sombre pour le menu mobile ------------ */
 
 body.dark .mobile-menu {
-  background-color: #000 !important; /* Fond sombre pour le menu mobile en mode sombre */
+  background-color: #000 !important;
 }
 
 body.dark .mobile-menu a {
-  color: #fff !important; /* Liens dans le menu mobile en blanc */
+  color: #fff !important; 
 }
 
 body.dark .mobile-dropdown li a {
-  color: #fff !important; /* Liens dans le sous-menu mobile en blanc */
+  color: #fff !important; 
 }
 
 /* ------------ Media Queries (pour les Mobiles) ------------- */
