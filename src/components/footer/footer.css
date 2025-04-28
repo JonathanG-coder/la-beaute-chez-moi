@@ -1,3 +1,5 @@
+/* ------------ Footer Styles ------------- */
+
 .footer {
   background-color: #f8f8f8;
   color: #333;
@@ -14,7 +16,6 @@
 }
 
 .box1 {
-  /* grid-area: box1; */
   display: flex;
   justify-content: center;
   margin-top: -30px;
@@ -25,8 +26,32 @@
   max-width: 250px;
 }
 
+/* Mode sombre : Changer le fond et la couleur du texte */
+body.dark .footer {
+  background-color: #222; 
+  color: #fff; 
+}
+
+body.dark .box2 a {
+  color: #fff; 
+}
+
+/* Suppression des effets de survol */
+body.dark .box2 a:hover {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+body.dark .social-icon {
+  color: #fff;
+}
+
+
+body.dark .social-icon:hover {
+  color: #fff; 
+}
+
 .box2 {
-  /* grid-area: box2; */
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -48,12 +73,11 @@
 }
 
 .box2 a:hover {
-  color: #e67e22;
-  text-decoration: underline;
+  color: #333; 
+  text-decoration: none; 
 }
 
 .box3 {
-  /* grid-area: box3; */
   display: flex;
   justify-content: start;
   margin-left: 60px;
@@ -66,11 +90,10 @@
 }
 
 .social-icon:hover {
-  color: #e67e22;
+  color: #333; 
 }
 
 .box4 {
-  /* grid-area: box4; */
   text-align: center;
   font-size: 14px;
   margin-top: 20px;

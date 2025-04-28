@@ -6,6 +6,7 @@ header {
   align-items: center;
   background-color: #ffffff;
   height: 160px;
+  transition: background-color 0.3s ease;
 }
 
 header img {
@@ -13,7 +14,27 @@ header img {
   height: auto;
 }
 
-/* Menu principal */
+/* ------------ Mode Sombre / Mode Clair ------------------- */
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Les icônes de changement de mode en blanc ou noir selon l'état */
+.dark-mode-toggle.dark svg {
+  fill: #fff !important; /* L'icône de la lune en blanc en mode sombre */
+}
+
+.dark-mode-toggle.light svg {
+  fill: #000 !important; /* L'icône du soleil en noir en mode clair */
+}
+
+/* ------------ Menu principal ------------- */
+
 .header-menu {
   display: flex;
 }
@@ -33,8 +54,36 @@ header img {
   margin: 0 10px;
 }
 
-.header-menu li {
-  display: inline-block;
+/* ------------ Mode sombre pour le header ------------------- */
+
+body.dark header {
+  background-color: #000 !important; /* Fond noir pour le header en mode sombre */
+}
+
+body.dark .header-menu a {
+  color: #fff !important; /* Liens en blanc pour le mode sombre */
+}
+
+body.dark .header-menu a:hover {
+  color: #ccc !important; /* Liens gris clair au survol */
+}
+
+/* Mode sombre spécifique pour le bouton "Prestations" */
+body.dark .dropdown .dropbtn {
+  color: #fff !important; /* Texte du bouton "Prestations" en blanc en mode sombre */
+}
+
+/* Menu dropdown en mode sombre */
+body.dark .dropdown-content {
+  background-color: #333 !important; /* Fond du menu déroulant sombre */
+}
+
+body.dark .dropdown-content a {
+  color: #fff !important; /* Liens dans le dropdown en blanc */
+}
+
+body.dark .dropdown-content a:hover {
+  background-color: #555 !important; /* Fond plus clair pour les liens au survol */
 }
 
 /* ------------ Dropdown (Menu Déroulant) ------------- */
@@ -94,6 +143,17 @@ header img {
   z-index: 10;
 }
 
+/* Assurez-vous que les icônes SVG sont correctement ciblées */
+body.dark .burger-menu svg {
+  fill: #fff !important; /* Icône burger en blanc pour mode sombre */
+}
+
+body.dark .burger-menu .burger-icon, 
+body.dark .burger-menu .close-icon {
+  fill: #fff !important; /* Assurez-vous que les icônes sont en blanc en mode sombre */
+}
+
+/* Menu mobile */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -129,22 +189,18 @@ header img {
   font-size: 18px;
 }
 
-/* ------------ Sous-menu (Dropdown) Mobile ------------- */
+/* ------------ Mode sombre pour le menu mobile ------------ */
 
-.mobile-dropdown {
-  list-style: none;
-  padding-left: 20px;
-  margin-top: 10px;
+body.dark .mobile-menu {
+  background-color: #000 !important; /* Fond sombre pour le menu mobile en mode sombre */
 }
 
-.mobile-dropdown li {
-  padding: 8px 0;
-  text-align: left;
+body.dark .mobile-menu a {
+  color: #fff !important; /* Liens dans le menu mobile en blanc */
 }
 
-.mobile-dropdown li a {
-  font-size: 16px;
-  color: #333;
+body.dark .mobile-dropdown li a {
+  color: #fff !important; /* Liens dans le sous-menu mobile en blanc */
 }
 
 /* ------------ Media Queries (pour les Mobiles) ------------- */
