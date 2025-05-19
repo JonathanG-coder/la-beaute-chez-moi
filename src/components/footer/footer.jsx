@@ -25,13 +25,13 @@ function Footer() {
       {/* LES SOINS */}
       <div className="boxSoins">
         <h3>LES SOINS</h3>
-        <a href="/" aria-current="page">
+        <a href="/Massages" aria-current="page">
           Massages
         </a>
-        <a href="/" aria-current="page">
+        <a href="/Manucure" aria-current="page">
           Onglerie
         </a>
-        <a href="/" aria-current="page">
+        <a href="/Regard" aria-current="page">
           Beauté du regard
         </a>
       </div>
