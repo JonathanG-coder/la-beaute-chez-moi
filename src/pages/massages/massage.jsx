@@ -1,5 +1,5 @@
 import "./massage.css";
-import Massage from "../../assets/massage/Massage.jpg";
+import MassageIMG from "../../assets/massage/Massage.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Prestation from "../../components/prestation/prestation";
 import Californien2 from "../../assets/massage/californien2.jpg";
@@ -31,7 +31,7 @@ function Massage() {
       <Affiche
         titre={`MASSAGE <br /> BIEN-ÊTRE`}
         sousTitre="LE MASSAGE DETENTE"
-        image={Massage}
+        image={MassageIMG}
         description={{
           accroche: "Une pause pour le corps et l’esprit",
           details:
