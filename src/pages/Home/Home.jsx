@@ -2,9 +2,14 @@ import "./home.css";
 import { useState } from "react";
 import logo from "../../assets/logo/Logo-blanc.png";
 import bio from "../../assets/regard/sourcils2.jpg";
+import { useEffect } from "react";
 
 function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

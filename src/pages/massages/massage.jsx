@@ -5,8 +5,9 @@ import Prestation from "../../components/prestation/prestation";
 import Californien2 from "../../assets/massage/californien2.jpg";
 import Prenatal2 from "../../assets/massage/prenatal2.jpg";
 import Tarif from "../../components/tarif/tarif";
+import { useEffect } from "react";
 
-function massage() {
+function Massage() {
   const tarification = [
     {
       titre: "Le Californien",
@@ -20,7 +21,11 @@ function massage() {
       ],
     },
   ];
-  
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container">
       <Affiche
@@ -58,4 +63,4 @@ function massage() {
   );
 }
 
-export default massage;
+export default Massage;

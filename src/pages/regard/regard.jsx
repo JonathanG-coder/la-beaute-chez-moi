@@ -6,8 +6,9 @@ import Prestation from "../../components/prestation/prestation";
 import Rehaussement3 from "../../assets/regard/Rehaussement3.jpg";
 import Sourcils from "../../assets/regard/Sourcils.jpg";
 import Tarif from "../../components/tarif/tarif";
+import { useEffect } from "react";
 
-function regard() {
+function Regard() {
   const tarification = [
     {
       titre: "Rehaussement de cils",
@@ -33,6 +34,10 @@ function regard() {
       ],
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container">
       <Affiche
@@ -81,4 +86,4 @@ function regard() {
   );
 }
 
-export default regard;
+export default Regard;

@@ -5,8 +5,15 @@ import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Tarif from "../../components/tarif/tarif";
 import Prestation from "../../components/prestation/prestation";
+import { useEffect } from "react";
 
-function manucure() {
+function Manucure() {
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   const tarification = [
     {
       titre: "Manucure",
@@ -82,4 +89,4 @@ function manucure() {
   );
 }
 
-export default manucure;
+export default Manucure;
