@@ -6,7 +6,7 @@ import Californien2 from "../../assets/massage/californien2.jpg";
 import Prenatal2 from "../../assets/massage/prenatal2.jpg";
 import Tarif from "../../components/tarif/tarif";
 
-function regard() {
+function massage() {
   const tarification = [
     {
       titre: "Le Californien",
@@ -58,4 +58,4 @@ function regard() {
   );
 }
 
-export default regard;
+export default massage;

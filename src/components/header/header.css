@@ -1,221 +1,69 @@
-/* ------------ Header ------------- */
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ffffff;
-  height: 160px;
-  transition: background-color 0.3s ease;
-}
-
-header img {
-  width: 35%;
-  height: auto;
-}
-
-/* ------------ Mode Sombre / Mode Clair ------------------- */
-
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 10px;
-}
-
-/* Les icônes de changement de mode en blanc ou noir selon l'état */
-.dark-mode-toggle.dark svg {
-  fill: #fff !important; 
-}
-
-.dark-mode-toggle.light svg {
-  fill: #000 !important; 
-}
-
-/* ------------ Menu principal ------------- */
-
-.header-menu {
-  display: flex;
-}
-
-.header-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.header {
   display: flex;
   align-items: center;
-}
-
-.header-menu a {
-  text-decoration: none;
-  color: #000;
-  padding: 15px;
-  margin: 0 10px;
-}
-
-/* ------------ Mode sombre pour le header ------------------- */
-
-body.dark header {
-  background-color: #000 !important; 
-}
-
-body.dark .header-menu a {
-  color: #fff !important;
-}
-
-body.dark .header-menu a:hover {
-  color: #ccc !important;
-}
-
-/* Mode sombre spécifique pour le bouton "Prestations" */
-body.dark .dropdown .dropbtn {
-  color: #fff !important;
-}
-
-/* Menu dropdown en mode sombre */
-body.dark .dropdown-content {
-  background-color: #333 !important; 
-}
-
-body.dark .dropdown-content a {
-  color: #fff !important; 
-}
-
-body.dark .dropdown-content a:hover {
-  background-color: #555 !important;
-}
-
-/* ------------ Dropdown (Menu Déroulant) ------------- */
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: rgb(0, 0, 0);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ------------ Menu Burger (Mobile) ------------- */
-
-.burger-menu {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
-}
-
-
-body.dark .burger-menu svg {
-  fill: #fff !important;
-}
-
-body.dark .burger-menu .burger-icon, 
-body.dark .burger-menu .close-icon {
-  fill: #fff !important; 
-}
-
-/* Menu mobile */
-.mobile-menu {
-  position: fixed;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
   top: 0;
-  right: -100%;
-  width: 250px;
-  height: auto;
-  background-color: #ffffff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease-in-out;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.header.dark {
+  background-color: #161616;
+  color: white;
+}
+
+.header.light {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  height: 100px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggle-darkmode,
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu.active {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  z-index: 2;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background-color 0.3s;
+  background-color: inherit;
 }
 
-.mobile-menu.open {
-  right: 0;
-}
-
-.mobile-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-menu li {
-  padding: 15px;
-  text-align: center;
-}
-
-.mobile-menu a {
+.nav-menu a {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: inherit;
+  margin: 5px 0;
 }
 
-/* ------------ Mode sombre pour le menu mobile ------------ */
-
-body.dark .mobile-menu {
-  background-color: #000 !important;
+body.dark-mode {
+  background-color: #121212;
+  color: white;
 }
 
-body.dark .mobile-menu a {
-  color: #fff !important; 
-}
-
-body.dark .mobile-dropdown li a {
-  color: #fff !important; 
-}
-
-/* ------------ Media Queries (pour les Mobiles) ------------- */
-
-@media (max-width: 768px) {
-  header img {
-    width: 35%;
-    height: auto;
-  }
-
-  .header-menu {
-    display: none;
-  }
-
-  .burger-menu {
-    display: block;
-  }
+body:not(.dark-mode) {
+  background-color: #ffffff;
+  color: black;
 }

@@ -1,128 +1,51 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown, ChevronUp, Moon, Sun } from "lucide-react";
-import logo from "../../assets/logo/Logo-blanc.png";
-import { useDarkMode } from "../../components/DarkMode/DarkModeContext";
-import "../header/header.css";
+import "./Header.css";
+import logo from "../../assets/logo/logo-blanc.png"; 
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [showDropdownMobile, setShowDropdownMobile] = useState(false);
+export default function Header() {
+  
+  // Variable d'état ---
+  // Le dark mode est activé par défaut (true)
+  const [darkMode, setDarkMode] = useState(true);
+  const [open, setOpen] = useState(false);
 
-  // Utilisation du hook useDarkMode pour obtenir l'état du mode sombre et la fonction de bascule
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  // Fonction pour inverser ---
+  const toggleMenu = () => setOpen(!open);
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
-  // Applique la classe 'dark' sur le body en fonction du mode sombre
-  useEffect(() => {
-    const body = document.body;
-    if (isDarkMode) {
-      body.classList.add("dark");
+  // A chaque fois que DarkMode change, utilisaion de useEffect
+  useEffect(() => {     //() => Fonction fléchée, callback
+    // Fonction pour changer le thème
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
     } else {
-      body.classList.remove("dark");
+      document.body.classList.remove("dark-mode");
     }
-  }, [isDarkMode]);
+  }, [darkMode]); //  = Tableau de dépendance qui surveille la liste des variables. CEtte fonction s'exécute à chaque fois que darkMode change
 
   return (
-    <header>
+    <header className={`header ${darkMode ? "dark" : "light"}`}>
       <Link to="/">
-        <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
+        <img src={logo} alt="Logo" className="logo" />
       </Link>
-
-      <nav className="header-menu">
-        <ul>
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <div className="dropdown">
-            <button className="dropbtn">
-              Prestations <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="dropdown-content">
-              <a href="/manucure">Onglerie</a>
-              <a href="/regard">Beauté du Regard</a>
-              <a href="/massage">Massages</a>
-            </div>
-          </div>
-          <li>
-            <Link to="/prendre-rendez-vous">Prendre Rendez-vous</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <button
-              onClick={toggleDarkMode}
-              className={`dark-mode-toggle ${isDarkMode ? "dark" : "light"}`}
-            >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-          </li>
-        </ul>
-      </nav>
-
-      <button className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <X size={30} /> : <Menu size={30} />}
-      </button>
-
-      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-        <ul>
-          <li>
-            <Link to="/" onClick={() => setIsOpen(false)}>
-              Accueil
-            </Link>
-          </li>
-          <li
-            onClick={() => setShowDropdownMobile(!showDropdownMobile)}
-            style={{ cursor: "pointer" }}
-          >
-            Prestations{" "}
-            {showDropdownMobile ? (
-              <ChevronUp size={16} />
-            ) : (
-              <ChevronDown size={16} />
-            )}
-            {showDropdownMobile && (
-              <ul className="mobile-dropdown">
-                <li>
-                  <Link to="/manucure" onClick={() => setIsOpen(false)}>
-                    Onglerie
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/regard" onClick={() => setIsOpen(false)}>
-                    Beauté du Regard
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/massage" onClick={() => setIsOpen(false)}>
-                    Massages
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </li>
-          <li>
-            <Link to="/prendre-rendez-vous" onClick={() => setIsOpen(false)}>
-              Prendre Rendez-vous
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>
-              Contact
-            </Link>
-          </li>
-          <li>
-            <button
-              onClick={toggleDarkMode}
-              className={`dark-mode-toggle ${isDarkMode ? "dark" : "light"}`}
-            >
-              {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-          </li>
-        </ul>
+      <div className="header-actions">
+        <div className="toggle-darkmode" onClick={toggleDarkMode}>
+          <i className={darkMode ? "fas fa-sun" : "fas fa-moon"}></i>
+        </div>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
       </div>
+      <nav className={`nav-menu ${open ? "active" : ""}`}>
+        <Link to="/">Home</Link>
+        <Link to="/manucure">manucure</Link>
+        <Link to="/massages">massage</Link>
+        <Link to="/regard">regard</Link>
+        {/* <Link to="/contact">contact</Link>
+        <Link to="/resume">Resume</Link> */}
+        
+      </nav>
     </header>
   );
 }
-
-export default Header;

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DarkModeProvider } from "./components/DarkMode/DarkModeContext";
 import "./App.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -17,14 +16,14 @@ import Contact from "./pages/contact/contact";
 
 function App() {
   return (
-    <DarkModeProvider>  
-      <Router>
+    <div className="App">
+
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/manucure" element={<Manucure />} />
           <Route path="/regard" element={<Regard />} />
-          <Route path="/massage" element={<Massage />} />
+          <Route path="/massages" element={<Massage />} />
           <Route path="/rehaussement" element={<Rehaussement />} />
           <Route path="/extension" element={<Extension />} />
           <Route path="/sourcils" element={<Sourcils />} />
@@ -34,8 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </Router>
-    </DarkModeProvider>
+    </div>
   );
 }
 
