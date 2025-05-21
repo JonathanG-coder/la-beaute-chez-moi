@@ -1,4 +1,3 @@
-import "./Extension.css";
 import Extension1 from "../../../assets/regard/Extension1.jpg"
 import Affiche from "../../../components/affiche/affiche";
 import Explication from "../../../components/explication/explication";

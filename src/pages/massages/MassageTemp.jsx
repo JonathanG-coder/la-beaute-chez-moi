@@ -1,4 +1,3 @@
-import "./Massage.css";
 import MassageIMG from "../../assets/massage/Massage.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Prestation from "../../components/prestation/prestation";

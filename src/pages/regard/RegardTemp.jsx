@@ -1,4 +1,3 @@
-import "./Regard.css";
 import regards from "../../assets/regard/regard.jpg";
 import Affiche from "../../components/affiche/affiche";
 import Rehaussement2 from "../../assets/regard/Rehaussement2.jpg";
