@@ -24,7 +24,7 @@ Un site web moderne pour la vente de prestations de beauté, incluant des servic
 - **React Router** : Pour la navigation entre les différentes pages du site.
 - **CSS** : Stylisation du site avec des règles CSS pour rendre l'interface attrayante et responsive.
 - **Lucide React** : Bibliothèque d'icônes pour les interactions (comme le changement de mode sombre).
-- **Context API** : Pour gérer le mode sombre sur l'ensemble du site.
+
 
 ---
 
