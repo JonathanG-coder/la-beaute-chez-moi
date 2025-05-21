@@ -1,4 +1,4 @@
-import "./explication.css";
+import "./Explication.css";
 import { Link } from "react-router-dom";
 
 function Explication({ titre, texte, image, lien }) {

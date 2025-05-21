@@ -1,5 +1,5 @@
 import imgaccueil from "../../assets/onglerie/Manucure&Beaute.jpg";
-import "./manucure.css";
+import "./Manucure.css";
 import manucure1 from "../../assets/onglerie/manucure1.jpg";
 import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
 import Affiche from "../../components/affiche/affiche";

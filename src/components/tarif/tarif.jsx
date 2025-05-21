@@ -1,4 +1,4 @@
-import "./tarif.css";
+import "./Tarif.css";
 import RDV from "../../assets/contact/RDV.png";
 import { useState } from "react";
 

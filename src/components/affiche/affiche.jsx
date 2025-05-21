@@ -1,4 +1,4 @@
-import "./affiche.css";
+import "./Affiche.css";
 
 function Affiche({ titre, sousTitre, image, description, showButton = true }) {
   return (

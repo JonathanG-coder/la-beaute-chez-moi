@@ -1,4 +1,4 @@
-import "./prenatal.css";
+import "./Prenatal.css";
 import Prenatal1 from "../../../assets/massage/prenatal1.jpg";
 import Affiche from "../../../components/affiche/affiche";
 import Tarif from "../../../components/tarif/tarif";

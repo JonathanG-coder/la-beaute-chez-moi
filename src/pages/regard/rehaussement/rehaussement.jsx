@@ -1,4 +1,4 @@
-import "./rehaussement.css";
+import "./Rehaussement.css";
 import Rehaussement from "../../../assets/regard/rehaussement-cils.jpeg";
 import Affiche from "../../../components/affiche/affiche";
 import Rehaussement4 from "../../../assets/regard/Rehaussement4.jpg";

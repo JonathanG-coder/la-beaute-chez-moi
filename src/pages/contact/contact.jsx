@@ -1,4 +1,4 @@
-import "./contact.css";
+import "./Contact.css";
 import Contact from "../../assets/contact/Contact.jpg";
 import Affiche from "../../components/affiche/affiche";
 

@@ -1,4 +1,4 @@
-import "../footer/footer.css";
+import "../footer/Footer.css";
 import logo from "../../assets/logo/Logo-blanc.png";
 // ==============TESSSSSTETTETETETE=======
 function Footer() {

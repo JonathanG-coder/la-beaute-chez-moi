@@ -1,4 +1,4 @@
-import "./californien.css";
+import "./Californien.css";
 import Californien from "../../../assets/massage/californien.jpg";
 import Affiche from "../../../components/affiche/affiche";
 import Explication from "../../../components/explication/explication";

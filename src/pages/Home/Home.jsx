@@ -1,4 +1,4 @@
-import "./home.css";
+import "./Home.css";
 import { useState } from "react";
 import logo from "../../assets/logo/Logo-blanc.png";
 import bio from "../../assets/regard/sourcils2.jpg";
