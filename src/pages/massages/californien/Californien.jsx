@@ -1,8 +1,8 @@
 import Californien from "../../../assets/massage/californien.jpg";
-import Affiche from "../../../components/affiche/affiche";
-import Explication from "../../../components/explication/explication";
+import Affiche from "../../../components/affiche/Affiche";
+import Explication from "../../../components/explication/Explication";
 import Californien3 from "../../../assets/massage/californien3.jpg";
-import Tarif from "../../../components/tarif/tarif";
+import Tarif from "../../../components/tarif/Tarif";
 
 function californien() {
   const tarification = [

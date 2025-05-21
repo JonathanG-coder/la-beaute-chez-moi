@@ -1,10 +1,10 @@
 import regards from "../../assets/regard/regard.jpg";
-import Affiche from "../../components/affiche/affiche";
+import Affiche from "../../components/affiche/Affiche";
 import Rehaussement2 from "../../assets/regard/Rehaussement2.jpg";
-import Prestation from "../../components/prestation/prestation";
+import Prestation from "../../components/prestation/Prestation";
 import Rehaussement3 from "../../assets/regard/Rehaussement3.jpg";
 import Sourcils from "../../assets/regard/Sourcils.jpg";
-import Tarif from "../../components/tarif/tarif";
+import Tarif from "../../components/tarif/Tarif";
 import { useEffect } from "react";
 
 function Regard() {

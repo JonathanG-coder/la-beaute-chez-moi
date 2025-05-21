@@ -1,4 +1,4 @@
-import "./prestation.css";
+import "./Prestation.css";
 import { Link } from "react-router-dom";
 
 function Prestation({titre, image, sousTitre, description, reverse = false, lien}) {

@@ -1,8 +1,8 @@
 import Rehaussement from "../../../assets/regard/rehaussement-cils.jpeg";
-import Affiche from "../../../components/affiche/affiche";
+import Affiche from "../../../components/affiche/Affiche";
 import Rehaussement4 from "../../../assets/regard/Rehaussement4.jpg";
-import Explication from "../../../components/explication/explication";
-import Tarif from "../../../components/tarif/tarif";
+import Explication from "../../../components/explication/Explication";
+import Tarif from "../../../components/tarif/Tarif";
 
 function rehaussement() {
   const tarification = [

@@ -1,8 +1,8 @@
 import "./Prenatal.css";
 import Prenatal1 from "../../../assets/massage/prenatal1.jpg";
-import Affiche from "../../../components/affiche/affiche";
-import Tarif from "../../../components/tarif/tarif";
-import Explication from "../../../components/explication/explication";
+import Affiche from "../../../components/affiche/Affiche";
+import Tarif from "../../../components/tarif/Tarif";
+import Explication from "../../../components/explication/Explication";
 import Prenatal from "../../../assets/massage/Prenatal.jpg";
 
 function prenatal() {

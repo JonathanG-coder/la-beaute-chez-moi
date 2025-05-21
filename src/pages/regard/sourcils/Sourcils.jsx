@@ -1,7 +1,7 @@
 import "./Sourcils.css";
-import Affiche from "../../../components/affiche/affiche";
-import Explication from "../../../components/explication/explication";
-import Tarif from "../../../components/tarif/tarif";
+import Affiche from "../../../components/affiche/Affiche";
+import Explication from "../../../components/explication/Explication";
+import Tarif from "../../../components/tarif/Tarif";
 import sourcils2 from "../../../assets/regard/sourcils2.jpg";
 import sourcils3 from "../../../assets/regard/sourcils3.jpg";
 

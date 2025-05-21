@@ -1,9 +1,9 @@
 import MassageIMG from "../../assets/massage/Massage.jpg";
-import Affiche from "../../components/affiche/affiche";
-import Prestation from "../../components/prestation/prestation";
+import Affiche from "../../components/affiche/Affiche";
+import Prestation from "../../components/prestation/Prestation";
 import Californien2 from "../../assets/massage/californien2.jpg";
 import Prenatal2 from "../../assets/massage/prenatal2.jpg";
-import Tarif from "../../components/tarif/tarif";
+import Tarif from "../../components/tarif/Tarif";
 import { useEffect } from "react";
 
 function Massage() {

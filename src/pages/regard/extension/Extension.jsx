@@ -1,7 +1,7 @@
 import Extension1 from "../../../assets/regard/Extension1.jpg"
-import Affiche from "../../../components/affiche/affiche";
-import Explication from "../../../components/explication/explication";
-import Tarif from "../../../components/tarif/tarif";
+import Affiche from "../../../components/affiche/Affiche";
+import Explication from "../../../components/explication/Explication";
+import Tarif from "../../../components/tarif/Tarif";
 import Extension from "../../../assets/regard/Extension.jpg";
 
 function extension() {

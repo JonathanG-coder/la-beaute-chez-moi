@@ -2,9 +2,9 @@ import imgaccueil from "../../assets/onglerie/Manucure&Beaute.jpg";
 import "./Manucure.css";
 import manucure1 from "../../assets/onglerie/manucure1.jpg";
 import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
-import Affiche from "../../components/affiche/affiche";
-import Tarif from "../../components/tarif/tarif";
-import Prestation from "../../components/prestation/prestation";
+import Affiche from "../../components/affiche/Affiche";
+import Tarif from "../../components/tarif/Tarif";
+import Prestation from "../../components/prestation/Prestation";
 import { useEffect } from "react";
 
 function Manucure() {
