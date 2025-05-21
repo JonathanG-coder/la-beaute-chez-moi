@@ -16,6 +16,7 @@ function Home() {
       {/* Présentation */}
       <div className="home-presentation">
         <h1>La Beauté Chez Moi</h1>
+        <p>- by Gabriela -</p>
         <button>Prendre Rendez-vous</button>
       </div>
 
