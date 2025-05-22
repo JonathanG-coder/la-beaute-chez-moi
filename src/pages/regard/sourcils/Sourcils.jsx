@@ -1,4 +1,3 @@
-import "./Sourcils.css";
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
