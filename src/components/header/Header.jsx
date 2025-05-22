@@ -39,9 +39,9 @@ export default function Header() {
       </div>
       <nav className={`nav-menu ${open ? "active" : ""}`}>
         <Link to="/">Home</Link>
-        <Link to="/manucure">manucure</Link>
-        <Link to="/massages">massage</Link>
-        <Link to="/regard">regard</Link>
+        <Link to="/manucure">Manucure</Link>
+        <Link to="/massages">Massage</Link>
+        <Link to="/regard">Regard</Link>
         {/* <Link to="/contact">contact</Link>
         <Link to="/resume">Resume</Link> */}
         
