@@ -74,6 +74,7 @@ function Home() {
       {/* Prestations */}
       <section className="home-prestations">
         <img src={logo} alt="logo du site" />
+        <p>- by Gabriela -</p>
         <h2>Découvrez mes prestations</h2>
         <div className="grid-container">
           <div className="grid-item item1">
