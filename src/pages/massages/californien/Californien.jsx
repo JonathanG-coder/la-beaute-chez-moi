@@ -1,10 +1,11 @@
-import Californien from "../../../assets/massage/californien.jpg";
+import CalifornienImg from "../../../assets/massage/californien.jpg";
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
 import Californien3 from "../../../assets/massage/californien3.jpg";
 import Tarif from "../../../components/tarif/Tarif";
+import { useEffect } from "react";
 
-function californien() {
+function Californien() {
   const tarification = [
     {
       titre: "Le Californien",
@@ -14,12 +15,17 @@ function californien() {
       ],
     },
   ];
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="container">
       <Affiche
         titre={`MASSAGE CALIFORNIEN <br> LA DOUCEUR A PORTER DE MAIN`}
         sousTitre="L'INSTANT CALIFORNIEN"
-        image={Californien}
+        image={CalifornienImg}
         description={{
           accroche: "À quoi sert le massage californien ?",
           details:
@@ -39,4 +45,4 @@ function californien() {
   );
 }
 
-export default californien;
+export default Californien;
