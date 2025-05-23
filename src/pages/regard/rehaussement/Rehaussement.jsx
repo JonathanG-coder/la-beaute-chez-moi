@@ -46,6 +46,7 @@ function Rehaussement() {
         Et pour un regard encore plus harmonieux, pensez à compléter ce soin par une mise en beauté des sourcils : épilation, pince, teinture… À vous le regard parfait !`}
         lien="/regard"
         image={Rehaussement4}
+        texteBouton={`DÉCOUVRIR LES AUTRES SOINS`}
       />
       {/*  Tarif  */}
       <Tarif prestations={tarification} />
