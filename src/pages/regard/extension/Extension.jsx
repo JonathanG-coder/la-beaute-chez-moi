@@ -2,9 +2,10 @@ import Extension1 from "../../../assets/regard/Extension1.jpg"
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
-import Extension from "../../../assets/regard/Extension.jpg";
+import ExtensionImg from "../../../assets/regard/Extension.jpg";
+import { useEffect } from "react";
 
-function extension() {
+function Extension() {
   const tarification = [
     {
       titre: "Extension de cils",
@@ -15,6 +16,11 @@ function extension() {
       ],
     }
   ]
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div className="container">
     <Affiche
@@ -34,7 +40,7 @@ function extension() {
     titre={"Extension de cils ✨"}
     texte={`Offrez à votre regard une touche de glamour avec mes services d'extensions de cils. Que vous choisissiez la pose cil à cil pour un effet naturel ou le volume russe pour un regard plus intense, je vous garantis un résultat soigné et adapté à vos envies. Je propose également un service de dépose de cils pour retirer vos extensions en toute sécurité.`}
     lien="/regard"
-    image={Extension}
+    image={ExtensionImg}
   />
   {/*  Tarif  */}
   <Tarif prestations={tarification} />
@@ -42,4 +48,4 @@ function extension() {
   );
 }
 
-export default extension;
+export default Extension;

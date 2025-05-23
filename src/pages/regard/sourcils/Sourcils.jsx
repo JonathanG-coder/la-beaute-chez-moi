@@ -3,8 +3,9 @@ import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
 import sourcils2 from "../../../assets/regard/sourcils2.jpg";
 import sourcils3 from "../../../assets/regard/sourcils3.jpg";
+import { useEffect } from "react";
 
-function sourcils() {
+function Sourcils() {
   const tarification = [
     {
       titre: "Sourcils",
@@ -16,6 +17,12 @@ function sourcils() {
       ],
     },
   ]
+
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+      
   return (
     <div className="container">
     <Affiche
@@ -42,4 +49,4 @@ function sourcils() {
   );
 }
 
-export default sourcils;
+export default Sourcils;

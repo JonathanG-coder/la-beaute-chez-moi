@@ -1,10 +1,11 @@
-import Rehaussement from "../../../assets/regard/rehaussement-cils.jpeg";
+import RehaussementImg from "../../../assets/regard/rehaussement-cils.jpeg";
 import Affiche from "../../../components/affiche/Affiche";
 import Rehaussement4 from "../../../assets/regard/Rehaussement4.jpg";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
+import { useEffect } from "react";
 
-function rehaussement() {
+function Rehaussement() {
   const tarification = [
     {
       titre: "Rehaussement de cils",
@@ -13,12 +14,17 @@ function rehaussement() {
          "Rehaussement DELUX : 50 €"],
     }
   ];
+
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <div className="container">
       <Affiche
         titre={`BEAUTE DU REGARD`}
         sousTitre="LE REHAUSSEMENT DE CILS"
-        image={Rehaussement}
+        image={RehaussementImg}
         description={{
           accroche: "A quoi sert le rehaussement cils ?",
           details:
@@ -48,4 +54,4 @@ function rehaussement() {
   );
 }
 
-export default rehaussement;
+export default Rehaussement;
