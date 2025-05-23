@@ -38,6 +38,7 @@ function Californien() {
         texte={`Offrez à votre corps une parenthèse de détente avec le massage californien, un soin enveloppant et apaisant qui vise à libérer les tensions et à favoriser une relaxation profonde. Ses mouvements doux et fluides, réalisés avec des huiles parfumées, offrent un véritable voyage sensoriel, permettant de détendre à la fois le corps et l'esprit. Ce massage est idéal pour réduire le stress, améliorer la circulation sanguine et retrouver une sensation de bien-être absolu.`}
         lien="/massages"
         image={Californien3}
+        texteBouton={`DÉCOUVRIR LES AUTRES MASSAGES`}
       />
       {/*  Tarif  */}
       <Tarif prestations={tarification} />
