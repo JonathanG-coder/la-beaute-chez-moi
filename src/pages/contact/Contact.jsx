@@ -1,5 +1,6 @@
 import Contactimg from "../../assets/contact/contactimg.jpg";
 import "./Contact.css";
+import Formulaire from "../../components/formulaire/Formulaire";
 
 
 
@@ -21,7 +22,11 @@ export function Contact() {
           <img src={Contactimg} alt="Contact Gabriela" />
         </div>
       </div>
-    </div>
+    </div>,
+    // Formulaire de contact
+    // Le formulaire est importé depuis le composant Formulaire
+      <Formulaire />
+   
   );
 }
 
