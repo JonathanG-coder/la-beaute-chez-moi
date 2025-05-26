@@ -1,6 +1,6 @@
 import "./Home.css";
 import { useState } from "react";
-import logo from "../../assets/logo/Logo-blanc.png";
+import logo from "../../assets/logo/logo.png";
 import bio from "../../assets/regard/sourcils2.jpg";
 import { useEffect } from "react";
 
