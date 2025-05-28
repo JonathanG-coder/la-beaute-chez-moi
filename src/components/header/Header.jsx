@@ -50,6 +50,8 @@ export default function Header() {
         <Link to="/manucure">Manucure</Link>
         <Link to="/massages">Massage</Link>
         <Link to="/regard">Regard</Link>
+        <Link to="/contact">Contact</Link>
+        
         {/* <Link to="/contact">contact</Link>
         <Link to="/resume">Resume</Link> */}
         
