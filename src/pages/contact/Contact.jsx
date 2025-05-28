@@ -24,7 +24,7 @@ export function Contact() {
                 className="info-item"
               >
                 <FaMapMarkerAlt className="info-icon" />
-                365 Olagaineko Bidea, Espelette
+                375 Olagaineko Bidea, Espelette
               </a>
               <a href="tel:+33612345678" className="info-item">
                 <FaPhoneAlt className="info-icon" />
