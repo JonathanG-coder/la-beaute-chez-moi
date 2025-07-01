@@ -1,20 +1,27 @@
 import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
 import './Formulaire.css';
 
 export default function Formulaire() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = (data) => {
-    emailjs.send(
-      'service_it5sfmi',
-      'contact_form_gabriela',
-      data,
-      '38OUegYN8vI3s1Ld8'
-    ).then(
-      () => alert("Message envoyé !"),
-      (err) => alert("Erreur lors de l'envoi : " + err.text)
-    );
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert('Message enregistré avec succès !');
+      } else {
+        alert("Erreur lors de l'enregistrement.");
+      }
+    } catch (error) {
+      alert("Erreur réseau : " + error.message);
+    }
   };
 
   return (
@@ -36,7 +43,7 @@ export default function Formulaire() {
       <input
         type="email"
         placeholder="Email"
-        {...register("Email", { 
+        {...register("Email", {
           required: "L'email est obligatoire",
           pattern: {
             value: /^\S+@\S+$/i,
