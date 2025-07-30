@@ -11,12 +11,12 @@
 }
 
 /* === THEMES === */
-.header.dark {
+.header.dark:not(.transparent) {
   background-color: #161616;
   color: white;
 }
 
-.header.light {
+.header.light:not(.transparent) {
   background-color: white;
   color: black;
 }
