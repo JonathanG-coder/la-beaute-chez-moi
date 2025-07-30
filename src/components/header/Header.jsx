@@ -2,50 +2,38 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo/logo.png"; 
-
 export default function Header() {
+  
+  // Variable d'état ---
+  // Le dark mode est activé par défaut (true)
   const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "light" ? false : true;
-  });
-
+  const savedTheme = localStorage.getItem("theme");
+  return savedTheme === "light" ? false : true;
+});
   const [open, setOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); 
 
+  // Fonction pour inverser ---
   const toggleMenu = () => setOpen(!open);
   const toggleDarkMode = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    localStorage.setItem("theme", newMode ? "dark" : "light");
-  };
+  const newMode = !darkMode;
+  setDarkMode(newMode);
+  localStorage.setItem("theme", newMode ? "dark" : "light");
+};
 
-  // Changement du thème (dark/light)
-  useEffect(() => {
+  // A chaque fois que DarkMode change, utilisaion de useEffect
+  useEffect(() => {     //() => Fonction fléchée, callback
+    // Fonction pour changer le thème
     if (darkMode) {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
-    } else {
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
-    }
-  }, [darkMode]);
-
-  // Détection du scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
+  } else {
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("dark-mode");
+  }
+  }, [darkMode]); //  = Tableau de dépendance qui surveille la liste des variables. CEtte fonction s'exécute à chaque fois que darkMode change
 
   return (
-    <header className={`header ${darkMode ? "dark" : "light"} ${isScrolled ? "transparent" : ""}`}>
+    <header className={`header ${darkMode ? "dark" : "light"}`}>
       <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
@@ -63,6 +51,10 @@ export default function Header() {
         <Link to="/massages">Massage</Link>
         <Link to="/regard">Regard</Link>
         <Link to="/contact">Contact</Link>
+        
+        {/* <Link to="/contact">contact</Link>
+        <Link to="/resume">Resume</Link> */}
+        
       </nav>
     </header>
   );

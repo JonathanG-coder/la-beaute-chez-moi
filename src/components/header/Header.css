@@ -1,4 +1,3 @@
-/* === HEADER CONTAINER === */
 .header {
   display: flex;
   align-items: center;
@@ -7,33 +6,23 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-/* === THEMES === */
-.header.dark:not(.transparent) {
+.header.dark {
   background-color: #161616;
   color: white;
 }
 
-.header.light:not(.transparent) {
+.header.light {
   background-color: white;
   color: black;
 }
 
-/* Transparent mode (on scroll) */
-.header.dark.transparent,
-.header.light.transparent {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-/* === LOGO === */
 .logo {
   height: 100px;
 }
 
-/* === ACTIONS (Dark mode toggle & Burger menu) === */
 .header-actions {
   display: flex;
   align-items: center;
@@ -47,7 +36,6 @@
   color: inherit;
 }
 
-/* === NAVIGATION MENU === */
 .nav-menu {
   display: none;
 }
@@ -60,9 +48,9 @@
   right: 20px;
   border-radius: 8px;
   padding: 10px;
+  transition: background-color 0.3s;
   background-color: inherit;
-  margin-top: 25px;
-  transition: background-color 0.3s ease;
+  margin-top: 25px;;
 }
 
 .nav-menu a {
@@ -71,13 +59,12 @@
   margin: 5px 0;
 }
 
-/* === BODY THEMES === */
 body.dark-mode {
   background-color: #121212;
   color: white;
 }
 
-body.light-mode {
+body:not(.dark-mode) {
   background-color: #ffffff;
   color: black;
 }
