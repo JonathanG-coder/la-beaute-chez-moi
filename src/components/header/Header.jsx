@@ -1,36 +1,55 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/logo/logo.png"; 
+import logo from "../../assets/logo/logo.png";
+
 export default function Header() {
-  
-  // Variable d'état ---
-  // Le dark mode est activé par défaut (true)
+  // État pour le Dark Mode (activé par défaut)
   const [darkMode, setDarkMode] = useState(() => {
-  const savedTheme = localStorage.getItem("theme");
-  return savedTheme === "light" ? false : true;
-});
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "light" ? false : true;
+  });
+
+  // État pour l'ouverture du menu
   const [open, setOpen] = useState(false);
 
-  // Fonction pour inverser ---
-  const toggleMenu = () => setOpen(!open);
-  const toggleDarkMode = () => {
-  const newMode = !darkMode;
-  setDarkMode(newMode);
-  localStorage.setItem("theme", newMode ? "dark" : "light");
-};
+  // Ref pour détecter les clics en dehors du menu
+  const menuRef = useRef(null);
 
-  // A chaque fois que DarkMode change, utilisaion de useEffect
-  useEffect(() => {     //() => Fonction fléchée, callback
-    // Fonction pour changer le thème
+  // Fonction pour inverser l'état du menu
+  const toggleMenu = () => setOpen(!open);
+
+  // Fonction pour basculer le Dark Mode
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem("theme", newMode ? "dark" : "light");
+  };
+
+  // Fermer le menu si clic en dehors
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Gestion du Dark Mode
+  useEffect(() => {
     if (darkMode) {
-    document.body.classList.add("dark-mode");
-    document.body.classList.remove("light-mode");
-  } else {
-    document.body.classList.add("light-mode");
-    document.body.classList.remove("dark-mode");
-  }
-  }, [darkMode]); //  = Tableau de dépendance qui surveille la liste des variables. CEtte fonction s'exécute à chaque fois que darkMode change
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
 
   return (
     <header className={`header ${darkMode ? "dark" : "light"}`}>
@@ -45,16 +64,12 @@ export default function Header() {
           <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </div>
-      <nav className={`nav-menu ${open ? "active" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/manucure">Manucure</Link>
-        <Link to="/massages">Massage</Link>
-        <Link to="/regard">Regard</Link>
-        <Link to="/contact">Contact</Link>
-        
-        {/* <Link to="/contact">contact</Link>
-        <Link to="/resume">Resume</Link> */}
-        
+      <nav ref={menuRef} className={`nav-menu ${open ? "active" : ""}`}>
+        <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+        <Link to="/manucure" onClick={() => setOpen(false)}>Manucure</Link>
+        <Link to="/massages" onClick={() => setOpen(false)}>Massage</Link>
+        <Link to="/regard" onClick={() => setOpen(false)}>Regard</Link>
+        <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
       </nav>
     </header>
   );
