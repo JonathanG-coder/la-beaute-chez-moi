@@ -19,6 +19,12 @@
   color: black;
 }
 
+.header.transparent {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+
 .logo {
   height: 100px;
 }
