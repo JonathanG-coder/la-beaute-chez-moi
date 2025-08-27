@@ -14,7 +14,7 @@ form {
 }
 
 body.dark-mode form {
-    /* En dark mode : fenêtre blanche sur fond noir */
+    /*dark mode*/
     background: #fff;
     color: #000;
 }
