@@ -1,38 +1,48 @@
-/* Formulaire.css */
-
 form {
     max-width: 400px;
     margin: 40px auto;
     padding: 32px 24px;
-    background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
     gap: 18px;
+
+    /* Par défaut (fond clair) */
+    background: #FBEAF3;
+    color: #fff;
+}
+
+body.dark-mode form {
+    /* En dark mode : fenêtre blanche sur fond noir */
+    background: #fff;
+    color: #000;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
     padding: 12px 14px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     font-size: 1rem;
     background: #fafbfc;
-    transition: border 0.2s;
+    transition: border 0.2s, background 0.2s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus {
-    border-color: #b48dd3;
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #b0416d;
     outline: none;
     background: #fff;
 }
 
+/* Bouton */
 input[type="submit"] {
-    background: linear-gradient(90deg, #b48dd3 0%, #7e57c2 100%);
+    background: #e67878;     
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -40,16 +50,21 @@ input[type="submit"] {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: opacity 0.2s;
     margin-top: 8px;
 }
 
 input[type="submit"]:hover {
-    background: linear-gradient(90deg, #7e57c2 0%, #b48dd3 100%);
+    opacity: 0.85;
 }
 
 ::placeholder {
     color: #b0aeb8;
     opacity: 1;
     font-size: 1rem;
+}
+
+/* Dark mode placeholders */
+body.dark-mode ::placeholder {
+    color: #666;
 }
