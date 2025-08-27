@@ -4,29 +4,23 @@ import "./Header.css";
 import logo from "../../assets/logo/logo.png";
 
 export default function Header() {
-  // État pour le Dark Mode (activé par défaut)
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "light" ? false : true;
   });
 
-  // État pour l'ouverture du menu
   const [open, setOpen] = useState(false);
-
-  // Ref pour détecter les clics en dehors du menu
+  const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
 
-  // Fonction pour inverser l'état du menu
   const toggleMenu = () => setOpen(!open);
 
-  // Fonction pour basculer le Dark Mode
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
     localStorage.setItem("theme", newMode ? "dark" : "light");
   };
 
-  // Fermer le menu si clic en dehors
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -40,7 +34,6 @@ export default function Header() {
     };
   }, []);
 
-  // Gestion du Dark Mode
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-mode");
@@ -51,8 +44,18 @@ export default function Header() {
     }
   }, [darkMode]);
 
+  // Gestion du scroll pour enlever le background
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={`header ${darkMode ? "dark" : "light"}`}>
+    <header className={`header ${darkMode ? "dark" : "light"} ${isScrolled ? "transparent" : ""}`}>
       <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
