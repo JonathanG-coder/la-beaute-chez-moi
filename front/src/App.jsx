@@ -13,7 +13,9 @@ import Prenatal from "./pages/massages/prenatal/Prenatal";
 import Californien from "./pages/massages/californien/Californien";
 import Tarif from "./components/tarif/Tarif";
 import Contact from "./pages/contact/Contact";
-import Login from "./pages/login/Login";
+import Login from "./pages/gestion/login/Login";
+import AdminDashboard from "./pages/gestion/dashboard/admin/AdminDashboard";
+import GeranteDashboard from "./pages/gestion/dashboard/gerante/GeranteDashboard";
 
 function App() {
   return (
@@ -34,6 +36,9 @@ function App() {
         {/* Login admin et gerante */}
         <Route path="/admin/login" element={<Login role="Admin" />} />
         <Route path="/gerante/login" element={<Login role="Gérante" />} />
+        {/* Dashboard */}
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/gerante/dashboard" element={<GeranteDashboard />} />
       </Routes>
       <Footer />
     </div>

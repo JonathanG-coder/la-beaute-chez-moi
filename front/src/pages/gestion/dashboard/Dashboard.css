@@ -1,0 +1,83 @@
+/* Dashboard.css */
+
+.dashboard-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* clair par défaut */
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-page thead {
+  background-color: #eaeaea;
+}
+
+.dashboard-page th,
+.dashboard-page td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-page tr:hover {
+  background-color: #f2f2f2;
+}
+
+.dashboard-page button {
+  padding: 6px 12px;
+  background-color: #ff85c1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-page button:hover {
+  background-color: #e066aa;
+}
+
+.dashboard-page p.error {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Dark mode support */
+body.dark-mode .dashboard-page {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .dashboard-page thead {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .dashboard-page tr:hover {
+  background-color: #333;
+}
+
+body.dark-mode .dashboard-page th,
+body.dark-mode .dashboard-page td {
+  border-bottom: 1px solid #555;
+}
+
+body.dark-mode .dashboard-page button {
+  background-color: #ff85c1;
+}
+
+body.dark-mode .dashboard-page button:hover {
+  background-color: #e066aa;
+}

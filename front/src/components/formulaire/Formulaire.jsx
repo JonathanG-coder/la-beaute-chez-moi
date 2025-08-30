@@ -2,11 +2,11 @@ import { useForm } from 'react-hook-form';
 import './Formulaire.css';
 
 export default function Formulaire() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch('http://localhost:3001/api/contact', {
+      const response = await fetch('http://localhost:3000/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -15,12 +15,15 @@ export default function Formulaire() {
       });
 
       if (response.ok) {
-        alert('Message enregistré avec succès !');
+        alert('Message envoyé avec succès !');
+        reset(); // Permet d'init le formulaire aprés envoi.
       } else {
         alert("Erreur lors de l'enregistrement.");
+        reset();
       }
     } catch (error) {
       alert("Erreur réseau : " + error.message);
+      reset();
     }
   };
 
@@ -29,21 +32,21 @@ export default function Formulaire() {
       <input
         type="text"
         placeholder="Nom"
-        {...register("Nom", { required: "Le nom est obligatoire" })}
+        {...register("nom", { required: "Le nom est obligatoire" })}
       />
       {errors.Nom && <p className="error">{errors.Nom.message}</p>}
 
       <input
         type="text"
         placeholder="Prénom"
-        {...register("Prenom", { required: "Le prénom est obligatoire" })}
+        {...register("prenom", { required: "Le prénom est obligatoire" })}
       />
       {errors.Prenom && <p className="error">{errors.Prenom.message}</p>}
 
       <input
         type="email"
         placeholder="Email"
-        {...register("Email", {
+        {...register("email", {
           required: "L'email est obligatoire",
           pattern: {
             value: /^\S+@\S+$/i,
@@ -56,12 +59,12 @@ export default function Formulaire() {
       <input
         type="tel"
         placeholder="Téléphone"
-        {...register("Telephone")}
+        {...register("telephone")}
       />
 
       <textarea
         placeholder="Message"
-        {...register("Message", { required: "Le message est obligatoire" })}
+        {...register("message", { required: "Le message est obligatoire" })}
       />
       {errors.Message && <p className="error">{errors.Message.message}</p>}
 
