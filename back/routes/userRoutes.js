@@ -5,7 +5,8 @@ import { verifyToken, requireAuth } from "../middlewares/auth.js";
 const router = express.Router();
 
 // Temporaire pour créer les comptes via Postman
-// router.post("/", register); // pas de verifyToken ni requireAuth
+// Permet d'eviter la verification par token et require
+// router.post("/", register);
 
 
 // Créer un utilisateur (admin seulement)

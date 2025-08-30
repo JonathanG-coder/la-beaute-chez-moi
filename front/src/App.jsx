@@ -13,26 +13,29 @@ import Prenatal from "./pages/massages/prenatal/Prenatal";
 import Californien from "./pages/massages/californien/Californien";
 import Tarif from "./components/tarif/Tarif";
 import Contact from "./pages/contact/Contact";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
     <div className="App">
-
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/manucure" element={<Manucure />} />
-          <Route path="/regard" element={<Regard />} />
-          <Route path="/massages" element={<Massage />} />
-           <Route path="/rehaussement" element={<Rehaussement />} />
-          <Route path="/extension" element={<Extension />} />
-          <Route path="/sourcils" element={<Sourcils />} />
-          <Route path="/prenatal" element={<Prenatal />} />
-          <Route path="/californien" element={<Californien />} /> 
-           <Route path="/tarif" element={<Tarif />} /> 
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/manucure" element={<Manucure />} />
+        <Route path="/regard" element={<Regard />} />
+        <Route path="/massages" element={<Massage />} />
+        <Route path="/rehaussement" element={<Rehaussement />} />
+        <Route path="/extension" element={<Extension />} />
+        <Route path="/sourcils" element={<Sourcils />} />
+        <Route path="/prenatal" element={<Prenatal />} />
+        <Route path="/californien" element={<Californien />} />
+        <Route path="/tarif" element={<Tarif />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Login admin et gerante */}
+        <Route path="/admin/login" element={<Login role="Admin" />} />
+        <Route path="/gerante/login" element={<Login role="Gérante" />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

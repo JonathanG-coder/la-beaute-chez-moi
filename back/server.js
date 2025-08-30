@@ -1,5 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from "cors";
+
 dotenv.config();
 
 // Import des routes 
@@ -9,6 +11,16 @@ import userRoutes from './routes/userRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 5002;
+
+
+// Autoriser les requêtes venant du front (exemple: localhost:5173 ou ton domaine Render)
+app.use(cors({
+  origin: "http://localhost:5173",
+  // ICi connexion au coté front (react vite) 
+  // A modifier , une fois installé sur render ! apr ex : https://LABEAUTECHEZMOI.onrender.com
+  // Possible de mettre * en dev pour tous autoriser, Mais eviter de le faire si données sensibles.
+}));
+
 
 // Un Middleware pour parser les crops des requêtes HTTP au format JSON (comme body-parser)
 app.use(express.json());

@@ -47,12 +47,18 @@ export const loginUser = async (req, res) => {
       { expiresIn: "1h" } // Permet de rester authentifié
     );
 
-    res.status(200).json({ message: "Connexion réussie", token });
+    // Renvoie aussi l'objet user pour que le front connaisse le rôle
+    res.status(200).json({ 
+      message: "Connexion réussie", 
+      token, 
+      user: { id: user.id, username: user.username, role: user.role } 
+    });
+
   } catch (err) {
     console.error("Erreur loginUser :", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
-};
+}; // <-- ici, cette accolade ferme correctement loginUser
 
 // Supprimer un utilisateur (admin)
 export const deleteUser = async (req, res) => {
@@ -65,5 +71,3 @@ export const deleteUser = async (req, res) => {
     res.status(500).json({ error: "Erreur serveur" });
   }
 };
-
-
