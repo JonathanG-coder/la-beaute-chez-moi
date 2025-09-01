@@ -1,6 +1,4 @@
-import RehaussementImg from "../../../assets/regard/rehaussement-cils.jpeg";
 import Affiche from "../../../components/affiche/Affiche";
-import Rehaussement4 from "../../../assets/regard/Rehaussement4.jpg";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
 import { useEffect } from "react";
@@ -24,7 +22,8 @@ function Rehaussement() {
       <Affiche
         titre={`BEAUTE DU REGARD`}
         sousTitre="LE REHAUSSEMENT DE CILS"
-        image={RehaussementImg}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727981/rehaussement-cils_vrevku.jpg"
+        alt="Rehaussmeent de cils"
         description={{
           accroche: "A quoi sert le rehaussement cils ?",
           details:
@@ -45,7 +44,8 @@ function Rehaussement() {
 
         Et pour un regard encore plus harmonieux, pensez à compléter ce soin par une mise en beauté des sourcils : épilation, pince, teinture… À vous le regard parfait !`}
         lien="/regard"
-        image={Rehaussement4}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727985/Rehaussement4_lblyey.jpg"
+        alt="Rehaussement de cils"
         texteBouton={`DÉCOUVRIR LES AUTRES SOINS`}
       />
       {/*  Tarif  */}

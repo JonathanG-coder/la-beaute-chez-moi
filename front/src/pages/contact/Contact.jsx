@@ -37,7 +37,8 @@ export function Contact() {
             </div>
           </div>
           <div className="cont-header-img">
-            <img src={Contactimg} alt="Contact Gabriela" />
+            <img src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727874/contactimg_uxwxmd.jpg"
+            alt="Contacter LaBeauteChezMoi" />
           </div>
         </div>
       </div>

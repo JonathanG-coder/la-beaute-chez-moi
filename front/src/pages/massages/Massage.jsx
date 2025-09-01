@@ -1,8 +1,5 @@
-import MassageIMG from "../../assets/massage/Massage.jpg";
 import Affiche from "../../components/affiche/Affiche";
 import Prestation from "../../components/prestation/Prestation";
-import Californien2 from "../../assets/massage/californien2.jpg";
-import Prenatal2 from "../../assets/massage/prenatal2.jpg";
 import Tarif from "../../components/tarif/Tarif";
 import { useEffect } from "react";
 
@@ -30,7 +27,8 @@ function Massage() {
       <Affiche
         titre={`MASSAGE <br /> BIEN-ÊTRE`}
         sousTitre="LE MASSAGE DETENTE"
-        image={MassageIMG}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727910/Massage_wnrykt.jpg"
+        alt ="massage detente : dos d'une femme qui se fait masser"
         description={{
           accroche: "Une pause pour le corps et l’esprit",
           details:
@@ -40,7 +38,8 @@ function Massage() {
       {/*  Prestations  */}
       <Prestation
         titre={"Vos massages coup de coeur"}
-        image={Californien2}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727907/californien2_hohvme.jpg"
+        alt = "massage californien"
         sousTitre={"Massage Californien 🌿"}
         description={
           "Offrez à votre corps une évasion sensorielle. Le massage californien, aux gestes lents et enveloppants, libère les tensions en douceur et favorise une profonde détente. Une bulle de bien-être rien que pour vous."
@@ -49,7 +48,8 @@ function Massage() {
       />
       <Prestation
         titre={""}
-        image={Prenatal2}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727904/prenatal2_kbdh6u.jpg"
+        alt = "Massage prenatal : massage au ventre d'une femme"
         sousTitre={"Massage Prenatal 💕"}
         description={`Un instant de bien-être pour maman et bébé.
         Pensé pour accompagner la future maman en douceur, le massage prénatal apaise les tensions et procure un véritable cocon de détente. Un moment privilégié pour se reconnecter à soi… et à son bébé.`}

@@ -1,5 +1,4 @@
 import "./Tarif.css";
-import RDV from "../../assets/contact/RDV.png";
 import { useState } from "react";
 
 function Tarif({ prestations }) {
@@ -13,7 +12,7 @@ function Tarif({ prestations }) {
     <div className="tarif-header">
       <div className="tarif-header-img">
         <img
-          src={RDV}
+          src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727875/RDV_izxks7.png"
           alt="Une main qui a un téléphone en main pour prendre un rendez-vous"
         />
       </div>

@@ -1,7 +1,5 @@
-import CalifornienImg from "../../../assets/massage/californien.jpg";
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
-import Californien3 from "../../../assets/massage/californien3.jpg";
 import Tarif from "../../../components/tarif/Tarif";
 import { useEffect } from "react";
 
@@ -25,7 +23,8 @@ function Californien() {
       <Affiche
         titre={`MASSAGE CALIFORNIEN <br> LA DOUCEUR A PORTER DE MAIN`}
         sousTitre="L'INSTANT CALIFORNIEN"
-        image={CalifornienImg}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727906/californien_sairk3.jpg"
+        alt = "Massage californien : massage du dos d'une femme"
         description={{
           accroche: "À quoi sert le massage californien ?",
           details:
@@ -37,7 +36,8 @@ function Californien() {
         titre={"Massage Californien 💆‍♀️"}
         texte={`Offrez à votre corps une parenthèse de détente avec le massage californien, un soin enveloppant et apaisant qui vise à libérer les tensions et à favoriser une relaxation profonde. Ses mouvements doux et fluides, réalisés avec des huiles parfumées, offrent un véritable voyage sensoriel, permettant de détendre à la fois le corps et l'esprit. Ce massage est idéal pour réduire le stress, améliorer la circulation sanguine et retrouver une sensation de bien-être absolu.`}
         lien="/massages"
-        image={Californien3}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727908/californien3_ixmqpy.jpg"
+        alt = "Massage californien : massage du dos d'une femme"
         texteBouton={`DÉCOUVRIR LES AUTRES MASSAGES`}
       />
       {/*  Tarif  */}

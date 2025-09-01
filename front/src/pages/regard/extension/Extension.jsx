@@ -1,8 +1,6 @@
-import Extension1 from "../../../assets/regard/Extension1.jpg"
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
-import ExtensionImg from "../../../assets/regard/Extension.jpg";
 import { useEffect } from "react";
 
 function Extension() {
@@ -26,7 +24,8 @@ function Extension() {
     <Affiche
       titre={`BEAUTE DU REGARD`}
       sousTitre="L'EXTENSION DE CILS"
-      image={Extension1}
+      image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727992/Extension1_lynsla.jpg"
+      alt="Extension de cils"
       description={{
         accroche: "A quoi sert l'extension de cils ?",
         details:
@@ -40,7 +39,8 @@ function Extension() {
     titre={"Extension de cils ✨"}
     texte={`Offrez à votre regard une touche de glamour avec mes services d'extensions de cils. Que vous choisissiez la pose cil à cil pour un effet naturel ou le volume russe pour un regard plus intense, je vous garantis un résultat soigné et adapté à vos envies. Je propose également un service de dépose de cils pour retirer vos extensions en toute sécurité.`}
     lien="/regard"
-    image={ExtensionImg}
+    image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727990/Extension_hqk9ud.jpg"
+    alt="Extension de cils"
     texteBouton={`DÉCOUVRIR LES AUTRES SOINS`}
   />
   {/*  Tarif  */}

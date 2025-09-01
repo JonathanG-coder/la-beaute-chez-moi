@@ -1,9 +1,5 @@
-import regards from "../../assets/regard/regard.jpg";
 import Affiche from "../../components/affiche/Affiche";
-import Rehaussement2 from "../../assets/regard/Rehaussement2.jpg";
 import Prestation from "../../components/prestation/Prestation";
-import Rehaussement3 from "../../assets/regard/Rehaussement3.jpg";
-import Sourcils from "../../assets/regard/Sourcils.jpg";
 import Tarif from "../../components/tarif/Tarif";
 import { useEffect } from "react";
 
@@ -42,7 +38,8 @@ function Regard() {
       <Affiche
         titre={`LA BEAUTE DU REGARD <br /> Vos Cils et Sourcils`}
         sousTitre="La Beauté du Regard"
-        image={regards}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727994/regard_lds6sf.jpg"
+        alt= "Rehaussement de cils"
         description={{
           accroche: "Des cils qui parlent, un regard qui captive.",
           details: `Sublimez votre regard avec nos soins spécialisés : rehaussement de
@@ -55,7 +52,8 @@ function Regard() {
       {/*  Prestations  */}
       <Prestation
         titre={"Votre Regard"}
-        image={Rehaussement2}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727977/Rehaussement2_tbldhv.jpg"
+        alt="Rehaussement de cils"
         sousTitre={"Le rehaussement de cils 🌸"}
         description={
           "Sublimez votre regard avec notre rehaussement de cils. Une solution naturelle pour des cils courbés, volumineux et longs"
@@ -64,7 +62,8 @@ function Regard() {
       />
       <Prestation
         titre={""}
-        image={Rehaussement3}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727976/Rehaussement3_eajueu.jpg"
+        alt="Rehaussement de cils"
         sousTitre={"L'extension de cils ✨"}
         description={`Optez pour nos extensions de cils : Volume Russe pour un regard intense ou Cil à Cil pour un effet plus naturel. Des cils sublimes, sur mesure, pour chaque occasion.`}
         lien="/extension"
@@ -72,7 +71,8 @@ function Regard() {
       />
       <Prestation
         titre={""}
-        image={Sourcils}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727979/Sourcils_nvagym.jpg"
+        alt="Restructuration des sourcils"
         sousTitre={"Vos sourcils 🖌️"}
         description={
           "Sublimez vos sourcils avec nos services de restructuration, teinture ou Brow Lift. Obtenez des sourcils parfaits, définis et naturels."

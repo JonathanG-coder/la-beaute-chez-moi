@@ -1,7 +1,3 @@
-import imgaccueil from "../../assets/onglerie/Manucure&Beaute.jpg";
-import "./Manucure.css";
-import manucure1 from "../../assets/onglerie/manucure1.jpg";
-import onglegel from "../../assets/onglerie/ongle-en-gel.jpg";
 import Affiche from "../../components/affiche/Affiche";
 import Tarif from "../../components/tarif/Tarif";
 import Prestation from "../../components/prestation/Prestation";
@@ -51,7 +47,8 @@ function Manucure() {
       <Affiche
         titre={`MANUCURE & <br /> BEAUTE DES ONGLES`}
         sousTitre="Prendre une manucure"
-        image={imgaccueil}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727939/Manucure_Beaute_vc1bly.jpg"
+        alt = "Mains d'une femme, posées sur une robe de mariée"
         description={{
           accroche:
             "Elégance et soin au bout des ongles",
@@ -67,7 +64,8 @@ function Manucure() {
       {/*  Prestations  */}
       <Prestation
         titre={"Mains et Pieds"}
-        image={manucure1}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727938/manucure1_o5admw.jpg"
+        alt = "posage de vernis sur l'ongle d'une femme"
         sousTitre={"Pose de vernis 💅"}
         description={
           "Pose de vernis classique ou semi permanent : sublimez vos mains avec une pose de vernis classique ou semi permanent. Je prends le soin de limer vos ongles et repousser les cuticules avant la pose de vernis afin d’avoir un travail de précision."
@@ -76,7 +74,8 @@ function Manucure() {
 
       <Prestation
         titre={""}
-        image={onglegel}
+        image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727943/ongle-en-gel_sxkwsa.jpg"
+        alt = "Mains d'une femme sur une serviette de plage"
         sousTitre={"Ongle en gel 💎"}
         description={`Avec capsule ou en chablon, apportez plus de longueur à vos ongles
         et permettez-vous quelques folies avec des décorations Nail Art.`}

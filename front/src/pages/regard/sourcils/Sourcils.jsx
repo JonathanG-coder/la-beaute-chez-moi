@@ -1,8 +1,6 @@
 import Affiche from "../../../components/affiche/Affiche";
 import Explication from "../../../components/explication/Explication";
 import Tarif from "../../../components/tarif/Tarif";
-import sourcils2 from "../../../assets/regard/sourcils2.jpg";
-import sourcils3 from "../../../assets/regard/sourcils3.jpg";
 import { useEffect } from "react";
 
 function Sourcils() {
@@ -28,7 +26,8 @@ function Sourcils() {
     <Affiche
       titre={`BEAUTE DU REGARD <br> L'ART DES  SOURCILS`}
       sousTitre="ENTRETIEN DES SOURCILS"
-      image={sourcils2}
+      image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727983/sourcils2_ftvluz.jpg"
+      alt="Entretien des sourcils"
       description={{
         accroche: "À quoi sert l’entretien des sourcils ?",
         details:
@@ -41,7 +40,8 @@ function Sourcils() {
     titre={"Entretien des sourcils 💖"}
     texte={`Sublimez votre regard avec un entretien de sourcils sur-mesure. Que ce soit pour une épilation précise, une mise en forme ou une teinture, je vous aide à révéler la beauté naturelle de vos sourcils. Je vous garantis un résultat impeccable et personnalisé, en harmonie avec la forme de votre visage, pour un regard parfaitement structuré et élégant.`}
     lien="/regard"
-    image={sourcils3}
+    image="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727986/sourcils3_zffeyp.jpg"
+    alt="Entretien des sourcils"
     texteBouton={`DÉCOUVRIR LES AUTRES SOINS`}
   />
   {/*  Tarif  */}
