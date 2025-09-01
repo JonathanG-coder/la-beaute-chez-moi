@@ -172,17 +172,17 @@
 
 .item1 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/regard/Beaute-du-regard.jpg");
+    url("https://res.cloudinary.com/djbvkngqe/image/upload/v1756727988/Beaute-du-regard_txbfu2.jpg");
 }
 
 .item2 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/onglerie/manucures.jpg");
+    url("https://res.cloudinary.com/djbvkngqe/image/upload/v1756727941/manucures_m5iw7p.jpg");
 }
 
 .item3 {
   background-image: linear-gradient(#ffffff80, #ffffff80),
-    url("../../assets/massage/massages.jpg");
+    url("https://res.cloudinary.com/djbvkngqe/image/upload/v1756727900/massages_uj50iy.jpg");
 }
 
 /* -------- AVIS CLIENT -------- */

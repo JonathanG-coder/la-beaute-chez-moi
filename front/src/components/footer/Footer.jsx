@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       {/* LOGO */}
       <div className="boxlogo">
-        <img src={logo} alt="LOGO du site LA BEAUTE CHEZ MOI" />
+        <img src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727741/logo_qtzisz.png" alt="LOGO du site LA BEAUTE CHEZ MOI" />
       </div>
       {/* INFORMATIONS */}
       <div className="boxInfo">

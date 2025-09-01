@@ -1,7 +1,5 @@
 import "./Home.css";
 import { useState } from "react";
-import logo from "../../assets/logo/logo.png";
-import bio from "../../assets/regard/sourcils2.jpg";
 import { useEffect } from "react";
 
 function Home() {
@@ -24,7 +22,7 @@ function Home() {
       <div className="bio">
         <div className="bio-img">
           <img
-            src={bio}
+            src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727983/sourcils2_ftvluz.jpg"
             alt="Image d'une femme qui réalise des prestations de beauté du regard"
           />
         </div>
@@ -73,7 +71,7 @@ function Home() {
 
       {/* Prestations */}
       <section className="home-prestations">
-        <img src={logo} alt="logo du site" />
+        <img src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727741/logo_qtzisz.png" alt="logo du site" />
         <p>- by Gabriela -</p>
         <h2>Découvrez mes prestations</h2>
         <div className="grid-container">
