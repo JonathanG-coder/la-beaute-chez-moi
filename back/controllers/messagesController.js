@@ -13,7 +13,7 @@ export async function addMessage(req, res) {
       await sendEmail({
         to: process.env.GMAIL_USER,
         replyTo: email, // l'adresse de la personne qui a rempli le formulaire
-        subject: "Nouveau message depuis le site",
+        subject: "Nouveau message depuis le site LabeauteChezMoi",
         html: `
           <h2>Nouveau message reçu</h2>
           <p><strong>Nom:</strong> ${nom}</p>
