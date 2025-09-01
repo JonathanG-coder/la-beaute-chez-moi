@@ -1,6 +1,6 @@
 /* -------- PRESENTATION -------- */
 .home-presentation {
-  background-image: url(../../assets/accueil/Presentation-accueil.jpg);
+  background-image: url("https://res.cloudinary.com/djbvkngqe/image/upload/v1756726466/Presentation-accueil_usvtbf.jpg");
   background-size: cover;
   background-position: center;
   height: 75vh;
