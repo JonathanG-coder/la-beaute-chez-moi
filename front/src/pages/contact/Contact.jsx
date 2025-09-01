@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import Contactimg from "../../assets/contact/contactimg.jpg";
 import "./Contact.css";
 import Formulaire from "../../components/formulaire/Formulaire";
 
