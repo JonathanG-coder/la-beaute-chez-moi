@@ -1,4 +1,5 @@
 import * as Messages from "../models/messagesModel.js";
+import sendEmail from "../utils/sendEmail.js";
 
 
 // Ajouter un message (formulaire contact)
@@ -6,6 +7,31 @@ export async function addMessage(req, res) {
   const { nom, prenom, email, telephone, message } = req.body;
   try {
     await Messages.createMessage(nom, prenom, email, telephone, message);
+
+    //Envoi du mail à la boite mail de la cliente grâce à nodemailer en plus que dans la base de données
+    try {
+      await sendEmail({
+        to: process.env.GMAIL_USER,
+        replyTo: email, // l'adresse de la personne qui a rempli le formulaire
+        subject: "Nouveau message depuis le site",
+        html: `
+          <h2>Nouveau message reçu</h2>
+          <p><strong>Nom:</strong> ${nom}</p>
+          <p><strong>Prénom:</strong> ${prenom}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Téléphone:</strong> ${telephone}</p>
+          <p><strong>Message:</strong><br/>${message}</p>
+        `,
+      });
+    } catch (err) {
+      console.error("Erreur lors de l'envoi de l'email:", err);
+      // On n’empêche pas la sauvegarde DB, mais on informe qu'il y a eu un souci mail
+      return res
+        .status(201)
+        .json({ message: "Message enregistré mais email non envoyé." });
+    }
+
+
     res.status(201).send("Message enregistré avec succès");
   } catch (err) {
     console.error(err);
