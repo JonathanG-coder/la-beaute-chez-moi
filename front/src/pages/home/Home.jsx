@@ -1,8 +1,10 @@
 import "./Home.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
 function Home() {
+  const navigate = useNavigate(); // POur la navigation au click vers d'autre page 
   const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
@@ -75,13 +77,13 @@ function Home() {
         <p>- by Gabriela -</p>
         <h2>Découvrez mes prestations</h2>
         <div className="grid-container">
-          <div className="grid-item item1">
+          <div className="grid-item item1" onClick={() => navigate("/regard")}>
             <span>Beauté du regard</span>
           </div>
-          <div className="grid-item item2">
+          <div className="grid-item item2"onClick={() => navigate("/manucure")}>
             <span>Onglerie</span>
           </div>
-          <div className="grid-item item3">
+          <div className="grid-item item3"onClick={() => navigate("/massages")}>
             <span>Massages</span>
           </div>
         </div>
