@@ -34,13 +34,3 @@ Voici un aperçu d'une des pages principales, présentant les services d'ongleri
 
 ![Onglerie](https://github.com/user-attachments/assets/074d9bfe-41e0-461e-9128-6577c550d61f)
 
-
-
----
-
-## **Installation du projet**
-
-1. **Clonez le projet** :
-   ```bash
-   git clone https://github.com/votre-utilisateur/beauty-services.git
-   cd beauty-services
