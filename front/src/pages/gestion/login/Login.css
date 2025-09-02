@@ -1,5 +1,3 @@
-/* Login.css */
-
 .login-page {
   display: flex;
   flex-direction: column;
@@ -7,7 +5,7 @@
   justify-content: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7; /* clair par défaut */
+  background-color: #f7f7f7;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -23,7 +21,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fff; /* clair par défaut */
+  background-color: #fff;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -85,4 +83,113 @@ body.dark-mode .login-form button:hover {
 
 body.dark-mode .login-form p.error {
   color: #ff6b6b;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 20px;
+}
+
+.login-page h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 100%;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff85c1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #e066aa;
+}
+
+.login-form p.error {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Dark mode support */
+body.dark-mode .login-page {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .login-form {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode .login-form input {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+body.dark-mode .login-form button {
+  background-color: #ff85c1;
+  color: #fff;
+}
+
+body.dark-mode .login-form button:hover {
+  background-color: #e066aa;
+}
+
+body.dark-mode .login-form p.error {
+  color: #ff6b6b;
+}
+
+/* -------- Responsive -------- */
+@media screen and (max-width: 480px) {
+  .login-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .login-page h2 {
+    font-size: 1.5rem;
+  }
 }

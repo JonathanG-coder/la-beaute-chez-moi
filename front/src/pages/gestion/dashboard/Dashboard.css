@@ -1,11 +1,9 @@
-/* Dashboard.css */
-
 .dashboard-page {
   max-width: 900px;
   margin: 50px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7; /* clair par défaut */
+  background-color: #f7f7f7; 
   color: #333;
   transition: background-color 0.3s, color 0.3s;
 }

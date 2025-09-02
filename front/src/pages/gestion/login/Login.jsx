@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Login.css"; // Import du CSS séparé
+import "./Login.css";
 
 export default function Login({ role }) {
   const [username, setUsername] = useState("");
@@ -24,13 +24,9 @@ export default function Login({ role }) {
         return;
       }
 
-      // Stocker le token dans localStorage
       localStorage.setItem("token", data.token);
-
-      // On récupère le rôle depuis la réponse backend
       const userRole = data.user.role;
 
-      // Redirection selon le rôle
       if (userRole === "gerante") {
         window.location.href = "/gerante/dashboard";
       } else if (userRole === "admin") {
