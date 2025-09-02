@@ -1,6 +1,11 @@
 import "./Affiche.css";
+import { useNavigate } from "react-router";
+
 
 function Affiche({ titre, sousTitre, image, description, showButton = true }) {
+  
+  const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="cont-header">
@@ -15,7 +20,7 @@ function Affiche({ titre, sousTitre, image, description, showButton = true }) {
         <h2>{sousTitre}</h2>
         <p>{description.accroche}</p>
         <p>{description.details}</p>
-        {showButton && <button>Prendre Rendez-vous</button>}
+        {showButton && <button onClick={() => navigate("/contact")}>Prendre Rendez-vous</button>}
       </div>
     </div>
   );

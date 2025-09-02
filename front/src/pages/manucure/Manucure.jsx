@@ -3,6 +3,7 @@ import Tarif from "../../components/tarif/Tarif";
 import Prestation from "../../components/prestation/Prestation";
 import { useEffect } from "react";
 
+
 function Manucure() {
 
   useEffect(() => {

@@ -17,7 +17,7 @@ function Home() {
       <div className="home-presentation">
         <h1>La Beauté Chez Moi</h1>
         <p>- by Gabriela -</p>
-        <button>Prendre Rendez-vous</button>
+        <button onClick={() => navigate("/contact")}>Prendre Rendez-vous</button>
       </div>
 
       {/* Biographie */}
