@@ -1,16 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-.tarif-header {
+.tarif-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "cont-header-img cont-header-titre ";
+  grid-template-areas: "tarif-image-section tarif-info-section";
   align-items: center;
   margin-top: 20px;
   background-color: #fbeaf3;
@@ -18,43 +9,42 @@
   border-radius: 10px;
 }
 
-.tarif-header-titre {
-  grid-area: cont-header-titre;
-  text-align: start;
+.tarif-info-section {
+  grid-area: tarif-info-section;
+  text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 20px;
-  text-align: center;
   color: black;
 }
 
-.tarif-header-img {
-  grid-area: cont-header-img;
+.tarif-image-section {
+  grid-area: tarif-image-section;
   padding: 30px;
   margin-top: 40px;
 }
 
-.tarif-header-img img {
+.tarif-image-section img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.menu-prestation {
+.tarif-menu {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.rubrique-prestation {
+.tarif-rubrique {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 300px;
 }
 
-.rubrique-prestation button {
+.tarif-rubrique-btn {
   padding: 10px;
   font-size: 16px;
   background-color: #f0f0f0;
@@ -63,11 +53,11 @@
   border-radius: 5px;
 }
 
-.rubrique-prestation button:hover {
+.tarif-rubrique-btn:hover {
   background-color: #e0e0e0;
 }
 
-.sousMenu-prestation {
+.tarif-sousmenu {
   padding: 10px 15px;
   margin-top: -5px;
   margin-bottom: 10px;
@@ -79,7 +69,7 @@
   gap: 8px;
 }
 
-.sousMenu-prestation p {
+.tarif-sousmenu p {
   margin: 0;
   font-size: 15px;
   font-weight: normal;
@@ -89,26 +79,26 @@
 
 /* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {
-  .tarif-header {
+  .tarif-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "cont-header-titre"
-      "cont-header-img";
+      "tarif-info-section"
+      "tarif-image-section";
     text-align: center;
     padding: 20px;
   }
 
-  .tarif-header-titre {
+  .tarif-info-section {
     justify-content: center;
     padding: 10px;
   }
 
-  .tarif-header-img {
+  .tarif-image-section {
     margin-top: 20px;
     padding: 10px;
   }
 
-  .tarif-header-img img {
+  .tarif-image-section img {
     width: 100%;
     height: auto;
   }

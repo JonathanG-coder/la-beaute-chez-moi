@@ -186,13 +186,16 @@
 }
 
 /* -------- AVIS CLIENT -------- */
-.avis-client {
+/* .avis-client {
   height: 130px;
-  background-color: #fd9c9c;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-}
+} */
+
+
+
+
 
 /* ----------- RESPONSIVE DESIGN ----------- */
 @media screen and (max-width: 768px) {

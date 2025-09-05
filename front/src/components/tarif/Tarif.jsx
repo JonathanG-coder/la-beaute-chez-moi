@@ -9,28 +9,28 @@ function Tarif({ prestations }) {
   };
 
   return (
-    <div className="tarif-header">
-      <div className="tarif-header-img">
+    <div className="tarif-container">
+      <div className="tarif-image-section">
         <img
           src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727875/RDV_izxks7.png"
           alt="Une main qui a un téléphone en main pour prendre un rendez-vous"
         />
       </div>
 
-      <div className="tarif-header-titre">
+      <div className="tarif-info-section">
         <h2>
           PRESTATIONS & <br /> TARIFS
         </h2>
 
-        <div className="menu-prestation">
-          <div className="rubrique-prestation">
+        <div className="tarif-menu">
+          <div className="tarif-rubrique">
             {prestations.map((item, index) => (
               <div key={index}>
-                <button onClick={() => toggle(index)}>
+                <button className="tarif-rubrique-btn" onClick={() => toggle(index)}>
                   {openIndex === index ? "➖" : "➕"} {item.titre}
                 </button>
                 {openIndex === index && (
-                  <div className="sousMenu-prestation">
+                  <div className="tarif-sousmenu">
                     {item.sousChoix.map((choix, i) => (
                       <p key={i}>{choix}</p>
                     ))}
@@ -44,4 +44,5 @@ function Tarif({ prestations }) {
     </div>
   );
 }
+
 export default Tarif;

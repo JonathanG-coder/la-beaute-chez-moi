@@ -41,15 +41,16 @@ export default function Login({ role }) {
   };
 
   return (
-    <div className="login-page">
-      <h2>Connexion {role}</h2>
-      <form className="login-form" onSubmit={handleLogin}>
+    <div className="login-container">
+      <h2 className="login-title">Connexion {role}</h2>
+      <form className="login-form-container" onSubmit={handleLogin}>
         <input
           type="text"
           placeholder="Nom d'utilisateur"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
+          className="login-input"
         />
         <input
           type="password"
@@ -57,9 +58,12 @@ export default function Login({ role }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          className="login-input"
         />
-        <button type="submit">Se connecter</button>
-        {error && <p className="error">{error}</p>}
+        <button type="submit" className="login-submit-btn">
+          Se connecter
+        </button>
+        {error && <p className="login-error">{error}</p>}
       </form>
     </div>
   );

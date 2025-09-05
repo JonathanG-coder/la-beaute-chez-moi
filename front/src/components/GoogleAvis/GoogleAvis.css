@@ -1,0 +1,123 @@
+.google-avis-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fbeaf3;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.google-avis-title {
+  color: #fd9c9c;
+  margin-bottom: 20px;
+}
+
+.google-avis-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.google-avis-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.google-avis-card p {
+  margin: 5px 0;
+}
+
+.google-avis-nav {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fd9c9c;
+  padding: 0 10px;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.google-avis-nav:hover {
+  color: #e67878;
+}
+
+.google-avis-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff85c1;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.google-avis-button:hover {
+  background-color: #e066aa;
+}
+
+/* Dark mode */
+body.dark-mode .google-avis-button {
+  background-color: #ff85c1;
+  color: #fff;
+}
+
+body.dark-mode .google-avis-button:hover {
+  background-color: #e066aa;
+}
+
+
+/* ---------- Dark Mode ---------- */
+body.dark-mode .google-avis-container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .google-avis-title {
+  color: #ff85c1;
+}
+
+body.dark-mode .google-avis-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .google-avis-nav {
+  color: #ff85c1;
+}
+
+body.dark-mode .google-avis-nav:hover {
+  color: #e1306c;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .google-avis-container {
+    max-width: 90%;
+  }
+
+  .google-avis-card {
+    padding: 15px;
+  }
+
+  .google-avis-nav {
+    font-size: 1.5rem;
+  }
+}
+
+.google-avis-loading,
+.google-avis-empty {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}

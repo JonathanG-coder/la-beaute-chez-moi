@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Dashboard.css"; // Import du CSS séparé
+import "./Dashboard.css";
 
 export default function Dashboard() {
   const [messages, setMessages] = useState([]);
@@ -37,10 +37,10 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="dashboard-page">
-      <h2>Dashboard</h2>
-      {error && <p className="error">{error}</p>}
-      <table>
+    <div className="dashboard-container">
+      <h2 className="dashboard-title">Dashboard</h2>
+      {error && <p className="dashboard-error">{error}</p>}
+      <table className="dashboard-table">
         <thead>
           <tr>
             <th>Nom</th>
@@ -51,12 +51,17 @@ export default function Dashboard() {
         </thead>
         <tbody>
           {messages.map((m) => (
-            <tr key={m.id}>
+            <tr key={m.id} className="dashboard-row">
               <td>{m.nom}</td>
               <td>{m.email}</td>
               <td>{m.message}</td>
               <td>
-                <button onClick={() => handleDelete(m.id)}>Supprimer</button>
+                <button
+                  className="dashboard-delete-btn"
+                  onClick={() => handleDelete(m.id)}
+                >
+                  Supprimer
+                </button>
               </td>
             </tr>
           ))}

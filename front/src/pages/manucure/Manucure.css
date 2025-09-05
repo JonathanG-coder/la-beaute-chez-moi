@@ -1,55 +1,64 @@
-/* prestations */
+/* ========== Container principal ========== */
+.manucure-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-.prestations-container h2 {
+/* ====== Titre prestations ====== */
+.manucure-prestations-title {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
-.prestations-box {
+/* ====== Boîte de prestations ====== */
+.manucure-prestations-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-.prestations-item {
+/* ====== Élément prestation ====== */
+.manucure-prestations-item {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: 2px solid #ddd;
   padding: 20px;
-  position: relative;
   flex-direction: column;
   width: 100%;
-  height: auto;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
-.prestations-item img {
+.manucure-prestations-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.prestations-item h3 {
+.manucure-prestations-item h3 {
   font-size: 1.3rem;
   margin-top: 10px;
 }
 
-.prestations-item p {
+.manucure-prestations-item p {
   font-size: 0.9rem;
   margin-top: 10px;
 }
 
-.prestations-item h3 + p {
+.manucure-prestations-item h3 + p {
   margin-top: 15px;
 }
 
+/* ====== Responsive ====== */
 @media screen and (max-width: 768px) {
+  .manucure-prestations-grid {
+    grid-template-columns: 1fr;
+  }
 }

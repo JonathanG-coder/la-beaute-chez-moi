@@ -1,4 +1,4 @@
-.header {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,43 +9,47 @@
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.header.dark {
+.header-dark {
   background-color: #161616;
   color: white;
 }
 
-.header.light {
+.header-light {
   background-color: white;
   color: black;
 }
 
-.header.transparent {
+.header-transparent {
   background-color: transparent !important;
   box-shadow: none;
 }
 
-.logo {
+.header-logo {
   height: 100px;
 }
 
-.header-actions {
+.header-logo-link {
+  display: inline-block;
+}
+
+.header-actions-container {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.toggle-darkmode,
-.menu-icon {
+.header-toggle-darkmode,
+.header-menu-icon {
   font-size: 1.5rem;
   cursor: pointer;
   color: inherit;
 }
 
-.nav-menu {
+.header-nav {
   display: none;
 }
 
-.nav-menu.active {
+.header-nav.header-nav-active {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -58,12 +62,13 @@
   margin-top: 25px;
 }
 
-.nav-menu a {
+.header-nav a {
   text-decoration: none;
   color: inherit;
   margin: 5px 0;
 }
 
+/* Dark mode global */
 body.dark-mode {
   background-color: #121212;
   color: white;

@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 
+import GoogleAvis from "../../components/GoogleAvis/GoogleAvis";
+
 function Home() {
   const navigate = useNavigate(); // POur la navigation au click vers d'autre page 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -89,7 +91,9 @@ function Home() {
         </div>
       </section>
 
-      <section className="avis-client"></section>
+      <section className="avis-client-google">
+        <GoogleAvis/>
+      </section>
     </div>
   );
 }

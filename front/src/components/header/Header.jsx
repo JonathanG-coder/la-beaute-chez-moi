@@ -1,17 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+
 export default function Header() {
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "light" ? false : true;
   });
 
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
 
-  const toggleMenu = () => setOpen(!open);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const toggleDarkMode = () => {
     const newMode = !darkMode;
@@ -22,14 +23,11 @@ export default function Header() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setOpen(false);
+        setMenuOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   useEffect(() => {
@@ -42,35 +40,33 @@ export default function Header() {
     }
   }, [darkMode]);
 
-  // Gestion du scroll pour enlever le background
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={`header ${darkMode ? "dark" : "light"} ${isScrolled ? "transparent" : ""}`}>
-      <Link to="/">
-        <img src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727741/logo_qtzisz.png" alt="Logo" className="logo" />
+    <header className={`header-container ${darkMode ? "header-dark" : "header-light"} ${isScrolled ? "header-transparent" : ""}`}>
+      <Link to="/" className="header-logo-link">
+        <img src="https://res.cloudinary.com/djbvkngqe/image/upload/v1756727741/logo_qtzisz.png" alt="Logo" className="header-logo" />
       </Link>
-      <div className="header-actions">
-        <div className="toggle-darkmode" onClick={toggleDarkMode}>
+
+      <div className="header-actions-container">
+        <div className="header-toggle-darkmode" onClick={toggleDarkMode}>
           <i className={darkMode ? "fas fa-sun" : "fas fa-moon"}></i>
         </div>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
+        <div className="header-menu-icon" onClick={toggleMenu}>
+          <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </div>
-      <nav ref={menuRef} className={`nav-menu ${open ? "active" : ""}`}>
-        <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-        <Link to="/manucure" onClick={() => setOpen(false)}>Manucure</Link>
-        <Link to="/massages" onClick={() => setOpen(false)}>Massage</Link>
-        <Link to="/regard" onClick={() => setOpen(false)}>Regard</Link>
-        <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+
+      <nav ref={menuRef} className={`header-nav ${menuOpen ? "header-nav-active" : ""}`}>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/manucure" onClick={() => setMenuOpen(false)}>Manucure</Link>
+        <Link to="/massages" onClick={() => setMenuOpen(false)}>Massage</Link>
+        <Link to="/regard" onClick={() => setMenuOpen(false)}>Regard</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </nav>
     </header>
   );

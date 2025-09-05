@@ -1,5 +1,5 @@
 /* ========== CONTAINER PRINCIPAL ========== */
-.container {
+.affiche-container {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -8,12 +8,11 @@
   max-width: 100%;
 }
 
-
 /* ========== HEADER ========== */
-.cont-header {
+.affiche-header {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "cont-header-titre cont-header-img";
+  grid-template-areas: "affiche-header-titre affiche-header-img";
   align-items: center;
   margin-top: 20px;
   background-color: #fbeaf3;
@@ -21,8 +20,8 @@
   border-radius: 10px;
 }
 
-.cont-header-titre {
-  grid-area: cont-header-titre;
+.affiche-header-titre {
+  grid-area: affiche-header-titre;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
@@ -30,21 +29,20 @@
   color: black;
 }
 
-.cont-header-img {
-  grid-area: cont-header-img;
+.affiche-header-img {
+  grid-area: affiche-header-img;
   padding: 30px;
   margin-top: 40px;
 }
 
-.cont-header-img img {
+.affiche-header-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-
 /* ========== EXPLICATION ========== */
-.cont-explication {
+.affiche-explication {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,17 +53,17 @@
   margin: auto;
 }
 
-.cont-explication h2 {
+.affiche-explication h2 {
   margin-bottom: 20px;
 }
 
-.cont-explication p {
+.affiche-explication p {
   margin-bottom: 15px;
   text-align: justify;
   line-height: 1.6;
 }
 
-.cont-explication button {
+.affiche-button {
   margin-top: 10px;
   padding: 10px 15px;
   border: none;
@@ -77,34 +75,57 @@
   transition: background-color 0.3s;
 }
 
-.cont-explication button:hover {
+.affiche-button:hover {
   background-color: #e67878;
 }
 
+/* ========== DARK MODE ========== */
+body.dark-mode .affiche-header {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .affiche-header-titre,
+body.dark-mode .affiche-explication h2,
+body.dark-mode .affiche-explication p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .affiche-explication {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .affiche-button {
+  background-color: #ff85c1;
+  color: #1e1e1e;
+}
+
+body.dark-mode .affiche-button:hover {
+  background-color: #e1306c;
+}
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 768px) {
-  .cont-header {
+  .affiche-header {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "cont-header-titre"
-      "cont-header-img";
+      "affiche-header-titre"
+      "affiche-header-img";
     text-align: center;
     padding: 20px;
   }
 
-  .cont-header-titre {
+  .affiche-header-titre {
     justify-content: center;
     padding: 10px;
     font-size: 20px;
   }
 
-  .cont-header-img {
+  .affiche-header-img {
     margin-top: 20px;
     padding: 10px;
   }
 
-  .cont-header-img img {
+  .affiche-header-img img {
     width: 100%;
     height: auto;
   }

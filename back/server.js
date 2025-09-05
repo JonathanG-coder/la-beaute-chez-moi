@@ -7,6 +7,7 @@ dotenv.config();
 // Import des routes 
 import messagesRoutes from './routes/messagesRoutes.js';
 import userRoutes from './routes/userRoutes.js';
+import googleAvis from './routes/googleAvisRoutes.js'
 
 
 const app = express();
@@ -37,6 +38,7 @@ app.get('/', (req, res) => {
 // Routes API
 app.use('/messages', messagesRoutes);
 app.use('/users', userRoutes);
+app.use('/avisGoogle', googleAvis);
 
 // Démarage du serveru
 app.listen(PORT, () => {

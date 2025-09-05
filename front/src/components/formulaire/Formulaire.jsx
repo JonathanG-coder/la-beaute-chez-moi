@@ -8,15 +8,13 @@ export default function Formulaire() {
     try {
       const response = await fetch('http://localhost:3000/messages', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
 
       if (response.ok) {
         alert('Message envoyé avec succès !');
-        reset(); // Permet d'init le formulaire aprés envoi.
+        reset(); 
       } else {
         alert("Erreur lors de l'enregistrement.");
         reset();
@@ -28,33 +26,30 @@ export default function Formulaire() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="formulaire-container" onSubmit={handleSubmit(onSubmit)}>
       <input
         type="text"
         placeholder="Nom"
         {...register("nom", { required: "Le nom est obligatoire" })}
       />
-      {errors.Nom && <p className="error">{errors.Nom.message}</p>}
+      {errors.nom && <p className="formulaire-error">{errors.nom.message}</p>}
 
       <input
         type="text"
         placeholder="Prénom"
         {...register("prenom", { required: "Le prénom est obligatoire" })}
       />
-      {errors.Prenom && <p className="error">{errors.Prenom.message}</p>}
+      {errors.prenom && <p className="formulaire-error">{errors.prenom.message}</p>}
 
       <input
         type="email"
         placeholder="Email"
         {...register("email", {
           required: "L'email est obligatoire",
-          pattern: {
-            value: /^\S+@\S+$/i,
-            message: "Adresse email invalide"
-          }
+          pattern: { value: /^\S+@\S+$/i, message: "Adresse email invalide" }
         })}
       />
-      {errors.Email && <p className="error">{errors.Email.message}</p>}
+      {errors.email && <p className="formulaire-error">{errors.email.message}</p>}
 
       <input
         type="tel"
@@ -66,7 +61,7 @@ export default function Formulaire() {
         placeholder="Message"
         {...register("message", { required: "Le message est obligatoire" })}
       />
-      {errors.Message && <p className="error">{errors.Message.message}</p>}
+      {errors.message && <p className="formulaire-error">{errors.message.message}</p>}
 
       <input type="submit" value="Envoyer" />
     </form>

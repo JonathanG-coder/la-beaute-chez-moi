@@ -1,5 +1,4 @@
-/* ========== CONTAINER PRINCIPAL ========== */
-.container {
+.contact-container {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -9,10 +8,10 @@
 }
 
 /* ========== HEADER ========== */
-.cont-header {
+.contact-header {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "cont-header-titre cont-header-img";
+  grid-template-areas: "contact-header-left contact-header-right";
   align-items: center;
   margin-top: 20px;
   background-color: #fbeaf3;
@@ -20,8 +19,8 @@
   border-radius: 10px;
 }
 
-.cont-header-titre {
-  grid-area: cont-header-titre;
+.contact-header-left {
+  grid-area: contact-header-left;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
@@ -29,8 +28,8 @@
   color: black;
 }
 
-/* ========== INFOS DE CONTACT ========== */
-.cont-header-infos {
+/* ========== CONTACT INFOS ========== */
+.contact-info-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,7 +38,7 @@
   font-size: 1rem;
 }
 
-.info-item {
+.contact-info-item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -49,60 +48,68 @@
   transition: color 0.3s ease;
 }
 
-.info-item:hover {
+.contact-info-item:hover {
   color: #b0416d;
 }
 
-.info-icon {
+.contact-info-icon {
   color: #b0416d;
   font-size: 1.2rem;
 }
 
-/* ========== IMAGE DE CONTACT ========== */
-.cont-header-img {
-  grid-area: cont-header-img;
+/* ========== HEADER IMAGE ========== */
+.contact-header-right {
+  grid-area: contact-header-right;
   padding: 30px;
   margin-top: 40px;
 }
 
-.cont-header-img img {
+.contact-header-right img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
+/* ========== FORMULAIRE SECTION ========== */
+.contact-form-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 768px) {
-  .cont-header {
+  .contact-header {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "cont-header-titre"
-      "cont-header-img";
+      "contact-header-left"
+      "contact-header-right";
     text-align: center;
     padding: 20px;
   }
 
-  .cont-header-titre {
+  .contact-header-left {
     justify-content: center;
     padding: 10px;
     font-size: 20px;
   }
 
-  .cont-header-img {
+  .contact-header-right {
     margin-top: 20px;
     padding: 10px;
   }
 
-  .cont-header-img img {
+  .contact-header-right img {
     width: 100%;
     height: auto;
   }
 
-  .cont-header-infos {
+  .contact-info-list {
     align-items: center;
   }
 
-  .info-item {
+  .contact-info-item {
     justify-content: center;
   }
 }

@@ -1,4 +1,4 @@
-form {
+.formulaire-container {
     max-width: 400px;
     margin: 40px auto;
     padding: 32px 24px;
@@ -7,22 +7,19 @@ form {
     display: flex;
     flex-direction: column;
     gap: 18px;
-
-    /* Par défaut (fond clair) */
     background: #FBEAF3;
     color: #fff;
 }
 
-body.dark-mode form {
-    /*dark mode*/
-    background: #fff;
-    color: #000;
+body.dark-mode .formulaire-container {
+    background: #1e1e1e;
+    color: #f0f0f0;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
+.formulaire-container input[type="text"],
+.formulaire-container input[type="email"],
+.formulaire-container input[type="tel"],
+.formulaire-container textarea {
     padding: 12px 14px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -31,17 +28,32 @@ textarea {
     transition: border 0.2s, background 0.2s;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus {
+body.dark-mode .formulaire-container input[type="text"],
+body.dark-mode .formulaire-container input[type="email"],
+body.dark-mode .formulaire-container input[type="tel"],
+body.dark-mode .formulaire-container textarea {
+    background: #2a2a2a;
+    border: 1px solid #555;
+    color: #f0f0f0;
+}
+
+.formulaire-container input[type="text"]:focus,
+.formulaire-container input[type="email"]:focus,
+.formulaire-container input[type="tel"]:focus,
+.formulaire-container textarea:focus {
     border-color: #b0416d;
     outline: none;
     background: #fff;
 }
 
-/* Bouton */
-input[type="submit"] {
+body.dark-mode .formulaire-container input[type="text"]:focus,
+body.dark-mode .formulaire-container input[type="email"]:focus,
+body.dark-mode .formulaire-container input[type="tel"]:focus,
+body.dark-mode .formulaire-container textarea:focus {
+    background: #3a3a3a;
+}
+
+.formulaire-container input[type="submit"] {
     background: #e67878;     
     color: #fff;
     border: none;
@@ -54,17 +66,23 @@ input[type="submit"] {
     margin-top: 8px;
 }
 
-input[type="submit"]:hover {
+.formulaire-container input[type="submit"]:hover {
     opacity: 0.85;
 }
 
-::placeholder {
+.formulaire-container ::placeholder {
     color: #b0aeb8;
     opacity: 1;
     font-size: 1rem;
 }
 
-/* Dark mode placeholders */
-body.dark-mode ::placeholder {
+body.dark-mode .formulaire-container ::placeholder {
     color: #666;
+}
+
+.formulaire-error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 5px;
 }
